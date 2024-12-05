@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador PRCMP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="quiz-container">
+  <div id="start-screen">
+    <h2>Simulador Teste Princípios</h2>
+    <button id="start-btn">Começar Teste</button>
+  </div>
+
+  <div id="quiz-screen" style="display: none;">
+    <div id="question"></div>
+    <div id="options"></div>
+    <div id="feedback"></div>
+    <button id="next-btn" style="display: none;">Próxima Questão</button>
+  </div>
+
+  <div id="end-screen" style="display: none;">
+    <h2>Fim do Teste!</h2>
+    <div id="score"></div>
+    <button id="restart-btn">Tentar Novamente</button>
+  </div>
+</div>
+
+<!-- Importa os arquivos JavaScript -->
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
