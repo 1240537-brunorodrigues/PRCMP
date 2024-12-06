@@ -991,20 +991,1004 @@ const questions = [
         ],
         answer: "o seu estado passa para Waiting e o processador é cedido a outro processo que se encontre pronto para executar."
     },
-
+    {
+        question: "O assembler é uma ferramenta que...",
+        options: [
+            "traduz um programa numa linguagem de alto-nível para linguagem-máquina.",
+            "traduz um programa numa linguagem de alto-nível para assembly.",
+            "traduz um programa em assembly para linguagem-máquina.",
+            "interpreta e executa linha-a-linha um programa numa linguagem de alto-nível."
+        ],
+        answer: "traduz um programa em assembly para linguagem-máquina."
+    },
+    {
+        question: "A instruction pipelining é uma técnica de otimização do desempenho de uma CPU em que se...",
+        options: [
+            "executam as três fases do ciclo fetch-decode-execute em paralelo, para uma única instrução.",
+            "executam duas ou mais instruções em paralelo, em unidades de execução distintas.",
+            "executam duas ou mais instruções em paralelo, em núcleos de processamento (cores) distintos.",
+            "executam as três fases do ciclo fetch-decode-execute em paralelo, para três instruções consecutivas."
+        ],
+        answer: "executam as três fases do ciclo fetch-decode-execute em paralelo, para uma única instrução."
+    },
+    {
+        question: "Utiliza-se a representação em complemento para 2...",
+        options: [
+            "para representar números com sinal em vírgula flutuante.",
+            "para representar números inteiros com sinal, com uma única representação do valor zero.",
+            "para representar números inteiros com sinal, havendo duas representações para o valor zero.",
+            "para representar os valores lógicos verdadeiro e falso."
+        ],
+        answer: "para representar números inteiros com sinal, com uma única representação do valor zero."
+    },
+    {
+        question: "Na arquitetura de Von Neumann...",
+        options: [
+            "os discos fazem parte do subsistema de memória.",
+            "o processador pode comunicar com todos os outros subsistemas através de um barramento.",
+            "não existe ligação direta entre o subsistema de I/O e o subsistema de memória.",
+            "o programa é implementado através de ligações elétricas, estabelecendo a sequência de circuitos aritméticos pretendida."
+        ],
+        answer: "o processador pode comunicar com todos os outros subsistemas através de um barramento."
+    },
+    {
+        question: "Um sistema operativo atual...",
+        options: [
+            "permite que o hardware possa ser diretamente acedido pelas aplicações.",
+            "oculta os pormenores do hardware através de um conjunto de serviços que são oferecidos às aplicações.",
+            "estabelece uma interface para as aplicações, que é específica à arquitetura do sistema.",
+            "requer que as aplicações coordenem entre si a utilização dos recursos da máquina."
+        ],
+        answer: "oculta os pormenores do hardware através de um conjunto de serviços que são oferecidos às aplicações."
+    },
+    {
+        question: "No processamento por lotes (batch processing)...",
+        options: [
+            "o operador carrega manualmente cada programa, após o programa anterior terminar.",
+            "existe uma boa utilização da capacidade de processamento.",
+            "o programa e os dados são fornecidos pelo utilizador, previamente à execução do programa.",
+            "vários programas intercalam no tempo a sua execução no processador."
+        ],
+        answer: "existe uma boa utilização da capacidade de processamento."
+    },
+    {
+        question: "Um sistema operativo multitarefa...",
+        options: [
+            "caracteriza-se por intercalar no tempo a execução de vários programas pelo processador.",
+            "executa os programas em sequência, do primeiro até ao último.",
+            "não tem o seu desempenho limitado pela capacidade de memória RAM.",
+            "não é indicado para sistemas que executem aplicações com muitas operações de I/O."
+        ],
+        answer: "caracteriza-se por intercalar no tempo a execução de vários programas pelo processador."
+    },
+    {
+        question: "Uma interface de linha de comando é uma aplicação...",
+        options: [
+            "que corre no espaço do kernel, executando comandos ordenados pelo utilizador.",
+            "que não faz parte do kernel do SO, mas que expõe os serviços do SO ao utilizador.",
+            "tornada obsoleta pelas interfaces gráficas do utilizador, nos SO contemporâneos.",
+            "que não permite a interação do computador com o utilizador."
+        ],
+        answer: "que não faz parte do kernel do SO, mas que expõe os serviços do SO ao utilizador."
+    },
+    {
+        question: "A memória ROM (nas suas várias tecnologias)...",
+        options: [
+            "é utilizada pelo SO para carregar o código e os dados dos programas solicitados pelos utilizadores.",
+            "existe exclusivamente em sistemas dedicados que executam sempre a mesma função.",
+            "deixou de ser utilizada por apresentar tempos de acesso maiores do que a memória RAM.",
+            "tem habitualmente o código que arranca o sistema."
+        ],
+        answer: "tem habitualmente o código que arranca o sistema."
+    },
+    {
+        question: "Um sistema distribuído é composto...",
+        options: [
+            "por vários processadores que partilham recursos através de um barramento comum.",
+            "por vários computadores geridos de uma forma centralizada, que executam cada um parte de uma aplicação e comunicam através de uma rede de comunicações.",
+            "por um computador que se conecta aos seus periféricos através de uma rede sem-fios.",
+            "por vários computadores que cooperam entre si, executando cada um parte de uma aplicação e comunicando através de uma rede de comunicações."
+        ],
+        answer: "por vários computadores que cooperam entre si, executando cada um parte de uma aplicação e comunicando através de uma rede de comunicações."
+    },
+    {
+        question: "A técnica de swaping permite...",
+        options: [
+            "libertar memória às custas de um processo que é enviado parcial ou totalmente da memória principal para o disco.",
+            "libertar memória enviando parcial ou totalmente da memória principal para o disco, o processo que está no estado Running.",
+            "retirar da CPU um processo para executar outro processo Ready com maior prioridade.",
+            "retirar da CPU um processo que pediu uma operação de I/O, para executar outro processo Ready."
+        ],
+        answer: "libertar memória às custas de um processo que é enviado parcial ou totalmente da memória principal para o disco."
+    },
+    {
+        question: "Os SO mantêm um conjunto de registos que lhes permite gerir os vários processos presentes no sistema. O registo de um dado processo, conhecido por Process Control Block (PCB)...",
+        options: [
+            "permite obter informação de outros processos concorrentes.",
+            "não permite determinar quais os ficheiros que o processo tem abertos.",
+            "mantém o registo atual dos blocos de memória que o processo ocupa.",
+            "permite saber quanto tempo de execução falta para o processo terminar."
+        ],
+        answer: "mantém o registo atual dos blocos de memória que o processo ocupa."
+    },
+    {
+        question: "Os dispositivos de entrada e saída (I/O devices)...",
+        options: [
+            "nunca podem comunicar diretamente com a memória.",
+            "são habitualmente tão rápidos quanto os processadores.",
+            "têm um controlador incorporado que opera o dispositivo autonomamente do processador.",
+            "são controlados diretamente pelo processador durante toda a sua operação."
+        ],
+        answer: "têm um controlador incorporado que opera o dispositivo autonomamente do processador."
+    },
+    {
+        question: "Quando falamos em arquitetura do conjunto de instruções (ISA) e em microarquitetura...",
+        options: [
+            "ambos os termos referem-se ao mesmo conceito.",
+            "a microarquitetura é a especificação que define o conjunto de instruções que o processador suporta.",
+            "a ISA define o esquema eletrônico do processador.",
+            "a microarquitetura é a implementação eletrônica (física) que realiza o conjunto de instruções suportado pelo processador."
+        ],
+        answer: "a microarquitetura é a implementação eletrônica (física) que realiza o conjunto de instruções suportado pelo processador."
+    },
+    {
+        question: "Os sistemas multi-utilizador caracterizam-se por permitir múltiplos programas carregados em memória prontos para ser executados de forma concorrente.",
+        options: [
+            "Estes sistemas apresentam a vantagem de conseguir diminuir o uso de memória.",
+            "Estes sistemas apresentam menor utilização do processador, pois conseguem executar mais instruções por unidade de tempo.",
+            "Estes sistemas requerem proteção de memória, para evitar que um processo aceda à memória de outros processos e corromper instruções e/ou dados.",
+            "Estes sistemas só podem ser implementados em computadores com múltiplos processadores."
+        ],
+        answer: "Estes sistemas requerem proteção de memória, para evitar que um processo aceda à memória de outros processos e corromper instruções e/ou dados."
+    },
+    {
+        question: "Um shell script é um programa interpretado pela interface da linha de comando...",
+        options: [
+            "desenvolvido numa linguagem de alto nível, sobretudo para resolver problemas de computação numérica.",
+            "escrito em assembly, para resolver problemas de caráter genérico.",
+            "que é utilizado para carregar o SO no arranque do computador.",
+            "desenvolvido numa linguagem de alto nível, sobretudo para automatizar tarefas de gestão e manutenção do sistema."
+        ],
+        answer: "desenvolvido numa linguagem de alto nível, sobretudo para automatizar tarefas de gestão e manutenção do sistema."
+    },
+    {
+        question: "Os computadores digitais contemporâneos utilizam exclusivamente a representação em base binária.",
+        options: [
+            "A representação de um valor inteiro em binário pode não ser exata (i.e. apresenta erro), mesmo que sejam utilizados bits suficientes.",
+            "A representação de um qualquer valor em binário requer tantos algarismos quantos a representação do mesmo valor em hexadecimal.",
+            "A conversão de um número fracionário exato em decimal para binário resulta sempre num número fracionário também exato (i.e. sem erro).",
+            "A conversão de um número fracionário exato em decimal para binário pode resultar num número binário com erro de representação."
+        ],
+        answer: "A conversão de um número fracionário exato em decimal para binário pode resultar num número binário com erro de representação."
+    },
+    {
+        question: "Num sistema com escalonamento sem preempção...",
+        options: [
+            "um processo no estado Ready pode passar para o estado Waiting.",
+            "um processo no estado Running pode passar para o estado Ready.",
+            "o SO pode interromper a execução do processo no estado Running para tratar uma interrupção de hardware.",
+            "o SO pode parar o processo no estado Running para executar outro processo de maior prioridade."
+        ],
+        answer: "um processo no estado Running pode passar para o estado Ready."
+    },
+    {
+        question: "Num sistema com escalonamento com preempção, um processo que invoque uma operação I/O passa ao estado...",
+        options: [
+            "Terminated",
+            "Waiting",
+            "Ready",
+            "Running"
+        ],
+        answer: "Waiting"
+    },
+    {
+        question: "O termo paralelismo significa...",
+        options: [
+            "que o computador permite processar múltiplas instruções em simultâneo.",
+            "que se intercala no tempo a execução de múltiplos processos no mesmo processador.",
+            "que um processo está impedido de acessar à memória ocupada por outros processos.",
+            "que um processo pode acessar simultaneamente a dois dispositivos de I/O."
+        ],
+        answer: "que o computador permite processar múltiplas instruções em simultâneo."
+    },
+    {
+        question: "Numa mudança de contexto...",
+        options: [
+            "um novo processo é criado, quando o programa é carregado de um ficheiro para a memória.",
+            "o processo em execução é parado temporariamente para o SO poder tratar uma interrupção de hardware.",
+            "o processador para de executar as instruções de um processo para passar a executar as de outro processo.",
+            "um processo é transferido da memória para o disco."
+        ],
+        answer: "o processador para de executar as instruções de um processo para passar a executar as de outro processo."
+    },
+    {
+        question: "Numa arquitetura superescalar...",
+        options: [
+            "são executadas as três fases do ciclo fetch-decode-execute em paralelo, para uma única instrução.",
+            "são executadas duas ou mais instruções do mesmo programa, em paralelo, em núcleos de processamento (cores) distintos.",
+            "são executadas duas ou mais instruções de programas distintos, em paralelo, em unidades de execução distintas (dentro da mesma CPU).",
+            "são executadas duas ou mais instruções do mesmo programa, em paralelo, em unidades de execução distintas (dentro da mesma CPU)."
+        ],
+        answer: "são executadas duas ou mais instruções do mesmo programa, em paralelo, em unidades de execução distintas (dentro da mesma CPU)."
+    },
+    {
+        question: "A norma IEEE 754 permite...",
+        options: [
+            "representar os valores lógicos verdadeiro e falso.",
+            "representar números com sinal em vírgula flutuante.",
+            "representar números inteiros com sinal, com uma única representação do valor zero.",
+            "representar números inteiros com sinal, havendo duas representações para o valor zero."
+        ],
+        answer: "representar números com sinal em vírgula flutuante."
+    },
+    {
+        question: "Na arquitetura de Von Neumann...",
+        options: [
+            "o programa é executado a partir da leitura sequencial das instruções em fita magnética ou disco.",
+            "a memória ROM pertence ao subsistema de I/O, enquanto a memória RAM pertence ao subsistema de memória.",
+            "o programa é armazenado na memória como uma sequência de números, que representam os códigos das instruções a executar.",
+            "o programa é implementado através de ligações elétricas, estabelecendo a sequência de circuitos aritméticos pretendida."
+        ],
+        answer: "o programa é armazenado na memória como uma sequência de números, que representam os códigos das instruções a executar."
+    },
+    {
+        question: "Suponha dois processadores distintos.",
+        options: [
+            "Os dois processadores só podem suportar a mesma arquitetura do conjunto de instruções (ISA) se forem exatamente iguais.",
+            "Os dois processadores podem suportar a mesma arquitetura do conjunto de instruções (ISA) mesmo tendo microarquiteturas diferentes.",
+            "Estes dois processadores podem suportar conjuntos de instruções (ISA) diferentes, mesmo tendo a mesma microarquitetura.",
+            "Os dois processadores podem implementar a mesma arquitetura do conjunto de instruções (ISA), e apresentar conjuntos de registos diferentes."
+        ],
+        answer: "Os dois processadores podem suportar a mesma arquitetura do conjunto de instruções (ISA) mesmo tendo microarquiteturas diferentes."
+    },
+    {
+        question: "Num sistema operativo...",
+        options: [
+            "o hardware é exposto às aplicações, que podem aceder diretamente aos controladores dos dispositivos.",
+            "a interface da linha de comandos (a shell) é o código que estabelece uma camada de abstração do hardware, disponibilizando às aplicações um conjunto de chamadas ao sistema para acesso aos recursos do sistema.",
+            "o núcleo (ou kernel) é o código que estabelece uma camada de abstração do hardware, disponibilizando às aplicações um conjunto de chamadas ao sistema para acesso aos recursos do sistema.",
+            "o núcleo (ou kernel) é o componente encarregado de interagir com o utilizador."
+        ],
+        answer: "o núcleo (ou kernel) é o código que estabelece uma camada de abstração do hardware, disponibilizando às aplicações um conjunto de chamadas ao sistema para acesso aos recursos do sistema."
+    },
+    {
+        question: "Um sistema operativo multitarefa...",
+        options: [
+            "tem que suportar vários utilizadores em simultâneo.",
+            "executa os programas em sequência, do primeiro até ao último.",
+            "apresenta melhor desempenho com conjuntos de aplicações computacionalmente intensivas (i.e., com poucas operações I/O).",
+            "caracteriza-se por ter vários programas carregados na memória em simultâneo, executados concorrentemente."
+        ],
+        answer: "caracteriza-se por ter vários programas carregados na memória em simultâneo, executados concorrentemente."
+    },
+    {
+        question: "Os serviços de um sistema operativo são facilmente invocados por um utilizador através...",
+        options: [
+            "da interface de linha de comandos (CLI) ou da interface gráfica do utilizador (GUI).",
+            "da interface de chamadas ao sistema do kernel.",
+            "das aplicações de utilizador.",
+            "da aplicação de manual/ajuda do SO."
+        ],
+        answer: "da interface de linha de comandos (CLI) ou da interface gráfica do utilizador (GUI)."
+    },
+    {
+        question: "A memória RAM permite dois tipos de operações: leitura e escrita.",
+        options: [
+            "Uma operação de escrita destrói o conteúdo nos endereços acedidos.",
+            "Uma operação de leitura destrói o conteúdo nos endereços acedidos.",
+            "Uma operação de acesso à memória, quer seja de leitura ou de escrita, destrói o conteúdo nos endereços acedidos.",
+            "As operações de leitura e escrita são também possíveis em memória ROM."
+        ],
+        answer: "As operações de leitura e escrita são também possíveis em memória ROM."
+    },
+    {
+        question: "Um cluster é composto...",
+        options: [
+            "por vários processadores que partilham recursos através de um barramento comum.",
+            "por vários processadores num único chip.",
+            "por vários computadores que cooperam entre si, executando cada um parte de uma aplicação e comunicando através de uma rede de comunicações.",
+            "por vários computadores situados na mesma instalação, geridos de uma forma centralizada para executar a mesma aplicação, comunicando através de uma rede de comunicações."
+        ],
+        answer: "por vários computadores que cooperam entre si, executando cada um parte de uma aplicação e comunicando através de uma rede de comunicações."
+    },
+    {
+        question: "Um processo...",
+        options: [
+            "é uma estrutura lógica que contém os dados de controlo de um programa necessários para o sistema operativo gerir os programas em execução.",
+            "é um espaço de endereçamento que contém exclusivamente as instruções de um programa.",
+            "é um espaço de endereçamento que contém exclusivamente os dados de um programa.",
+            "é uma instância de um programa (ou parte de um programa) em execução."
+        ],
+        answer: "é uma instância de um programa (ou parte de um programa) em execução."
+    },
+    {
+        question: "No ciclo fetch-decode-execute...",
+        options: [
+            "a unidade de controlo lê da memória o código da próxima operação na fase execute.",
+            "os valores dos dados a operar são copiados da memória para os registos internos na fase fetch.",
+            "é na fase decode que a CPU determina qual a operação a realizar, a partir do código de operação atual.",
+            "a unidade de controlo incrementa o stack pointer na fase fetch."
+        ],
+        answer: "é na fase decode que a CPU determina qual a operação a realizar, a partir do código de operação atual."
+    },
+    {
+        question: "Os dispositivos de entrada e saída (I/O devices)...",
+        options: [
+            "podem comunicar diretamente com a memória, se o sistema dispor da técnica de acesso direto à memória (DMA).",
+            "são habitualmente tão rápidos quanto os processadores.",
+            "não informam o processador de que terminaram uma operação, para não sobrecarregar o sistema.",
+            "são controlados diretamente pelo processador durante toda a sua operação."
+        ],
+        answer: "podem comunicar diretamente com a memória, se o sistema dispor da técnica de acesso direto à memória (DMA)."
+    },
+    {
+        question: "Nas operações lógicas binárias com cadeias de bits (bitwise operations)...",
+        options: [
+            "o operador AND é selecionado para forçar o bit UM (1) em determinadas posições da cadeia.",
+            "o operador OR é selecionado para forçar o bit ZERO (0) em determinadas posições da cadeia.",
+            "a máscara é uma cadeia de bits especificamente definida para transformar determinados bits, em associação com o operador selecionado.",
+            "o operador XOR é selecionado para forçar o bit UM (1) em determinadas posições da cadeia."
+        ],
+        answer: "a máscara é uma cadeia de bits especificamente definida para transformar determinados bits, em associação com o operador selecionado."
+    },
+    {
+        question: "Na shell de um sistema UNIX/Linux...",
+        options: [
+            "pode-se dispor os elementos de uma linha de comando em qualquer ordem.",
+            "é possível direcionar a saída de um comando (STDOUT) para a entrada do comando seguinte (STDIN).",
+            "só é permitido executar aplicações do sistema operativo.",
+            "não é possível compilar programas."
+        ],
+        answer: "é possível direcionar a saída de um comando (STDOUT) para a entrada do comando seguinte (STDIN)."
+    },
+    {
+        question: "Um shell script...",
+        options: [
+            "é um programa compilado, utilizado como comando do sistema operativo.",
+            "é um programa escrito em assembly, para resolver problemas de caráter genérico.",
+            "é o programa que carrega o sistema operativo, durante o arranque do computador.",
+            "é um programa escrito em linguagem de alto-nível, interpretado pela interface da linha de comando."
+        ],
+        answer: "é um programa escrito em linguagem de alto-nível, interpretado pela interface da linha de comando."
+    },
+    {
+        question: "Os computadores digitais contemporâneos utilizam exclusivamente a representação em base binária.",
+        options: [
+            "A conversão de um número fracionário exato em decimal para binário resulta sempre num número fracionário também exato (i.e. sem erro).",
+            "A conversão de um número fracionário exato em decimal para binário pode resultar num número binário com erro de representação.",
+            "A representação de um valor inteiro em binário pode não ser exata (i.e. apresenta erro), mesmo que sejam utilizados bits suficientes.",
+            "A representação de um qualquer valor em binário requer tantos algarismos quantos a representação do mesmo valor em hexadecimal."
+        ],
+        answer: "A conversão de um número fracionário exato em decimal para binário pode resultar num número binário com erro de representação."
+    },
+    {
+        question: "Num sistema com escalonamento sem preempção...",
+        options: [
+            "um processo no estado Running pode passar para o estado Terminated.",
+            "um processo no estado Running pode passar para o estado Ready.",
+            "um processo no estado Waiting pode passar para o estado Running.",
+            "o SO pode parar o processo no estado Running para executar outro processo de maior prioridade."
+        ],
+        answer: "um processo no estado Running pode passar para o estado Ready."
+    },
+    {
+        question: "Num sistema com escalonamento com preempção, um processo no estado New pode passar ao estado...",
+        options: [
+            "Ready",
+            "Running",
+            "Waiting",
+            "Terminated"
+        ],
+        answer: "Ready"
+    },
+    {
+        question: "Atualmente, a maior fatia de processadores existentes no mundo estão aplicados em sistemas computacionais de tempo-real.",
+        options: [
+            "Estes sistemas caracterizam-se por terem que reagir imediatamente às interações com o utilizador.",
+            "Estes sistemas são compostos de milhares de processadores, e implementam os serviços de nuvem.",
+            "Para além de terem que ser funcionalmente corretos, estes sistemas têm que disponibilizar os resultados ou atuar dentro de janelas de tempo bem definidas.",
+            "Nestes sistemas, o maior interesse é que as aplicações apresentem os resultados o mais depressa possível."
+        ],
+        answer: "Para além de terem que ser funcionalmente corretos, estes sistemas têm que disponibilizar os resultados ou atuar dentro de janelas de tempo bem definidas."
+    },
+    {
+        question: "O assembler tem como função…",
+        options: [
+            "traduzir um programa em assembly para linguagem-máquina.",
+            "traduzir um programa em linguagem de alto-nível para linguagem-máquina.",
+            "traduzir um programa em linguagem de alto-nível para assembly.",
+            "interpretar e executar as instruções em assembly de um programa."
+        ],
+        answer: "traduzir um programa em assembly para linguagem-máquina."
+    },
+    {
+        question: "O linker é um utilitário que…",
+        options: [
+            "resolve todas as referências a símbolos, substituindo-as pelos seus endereços.",
+            "transforma as instruções em assembly para linguagem-máquina.",
+            "liga as instruções aos dados de um programa, em tempo de execução.",
+            "carrega um ficheiro executável para memória."
+        ],
+        answer: "resolve todas as referências a símbolos, substituindo-as pelos seus endereços."
+    },
+    {
+        question: "De acordo com a arquitetura de Von Neumann…",
+        options: [
+            "o subsistema de entrada-saída (I/O) inclui todos os periféricos de entrada, periféricos de saída e o armazenamento em massa.",
+            "o subsistema de memória inclui a memória principal e o armazenamento em massa.",
+            "o subsistema de entrada-saída (I/O) inclui a memória principal.",
+            "o subsistema de memória é utilizado para guardar somente os dados dos programas."
+        ],
+        answer: "o subsistema de entrada-saída (I/O) inclui todos os periféricos de entrada, periféricos de saída e o armazenamento em massa."
+    },
+    {
+        question: "Relativamente à memória principal de um computador…",
+        options: [
+            "uma operação de escrita elimina o valor anteriormente armazenado no endereço acedido.",
+            "uma operação de leitura elimina o valor lido do endereço acedido.",
+            "as operações de leitura e de escrita não são destrutivas.",
+            "as operações de leitura e de escrita são destrutivas."
+        ],
+        answer: "as operações de leitura e de escrita não são destrutivas."
+    },
+    {
+        question: "Um dos principais objetivos de um sistema operativo é…",
+        options: [
+            "permitir às aplicações o acesso ao hardware exclusivamente através dos seus serviços.",
+            "permitir às aplicações coordenarem entre si a utilização dos recursos partilhados.",
+            "disponibilizar às aplicações uma interface que é específica à arquitetura do sistema.",
+            "permitir às aplicações o acesso direto ao hardware."
+        ],
+        answer: "permitir às aplicações o acesso ao hardware exclusivamente através dos seus serviços."
+    },
+    {
+        question: "O processamento por lotes (batch processing) …",
+        options: [
+            "é caracterizado pelo tempo necessário para completar o lote de programas ser predominantemente determinado pelo tempo necessário para realizar as operações de I/O.",
+            "é apropriado para programas interativos.",
+            "necessita que o operador carregue manualmente cada programa, após o programa anterior terminar.",
+            "é caracterizado por uma boa utilização da capacidade de processamento."
+        ],
+        answer: "é caracterizado por uma boa utilização da capacidade de processamento."
+    },
+    {
+        question: "Um processo…",
+        options: [
+            "é uma instância de um programa (ou parte de um programa) em execução.",
+            "é um espaço de endereçamento que contém exclusivamente as instruções de um programa.",
+            "é um espaço de endereçamento que contém exclusivamente os dados de um programa.",
+            "é uma estrutura lógica que contém os dados de controlo de um programa necessários para o sistema operativo gerir os programas em execução."
+        ],
+        answer: "é uma instância de um programa (ou parte de um programa) em execução."
+    },
+    {
+        question: "Um sistema operativo multitarefa visa gerir a execução de processos de modo a…",
+        options: [
+            "maximizar a utilização do processador.",
+            "maximizar a utilização dos dispositivos de I/O.",
+            "maximizar a utilização de memória.",
+            "minimizar o tempo utilizado nas operações de I/O."
+        ],
+        answer: "maximizar a utilização do processador."
+    },
+    {
+        question: "Num sistema distribuído…",
+        options: [
+            "múltiplos processadores partilham dispositivos através de um barramento comum e comunicam entre si, mas cada processador tem a sua memória privada.",
+            "múltiplos processadores partilham recursos através de um barramento comum.",
+            "diversos computadores comunicam entre si e partilham recursos através de uma rede de comunicação, cooperando para executar um programa.",
+            "vários computadores são ligados entre si através de uma rede local de alto débito, sendo a computação gerida de forma centralizada."
+        ],
+        answer: "diversos computadores comunicam entre si e partilham recursos através de uma rede de comunicação, cooperando para executar um programa."
+    },
+    {
+        question: "O Process Control Block (PCB) de um processo mantém o registo sobre…",
+        options: [
+            "a identificação do processo, o estado do processador (aquando da última comutação do processo) e informação de controlo do processo.",
+            "o estado do processador e informação de controlo do processo.",
+            "o estado do processo e identificação do sistema operativo em que o processo está a correr.",
+            "identificação do processador e identificação do processo."
+        ],
+        answer: "a identificação do processo, o estado do processador (aquando da última comutação do processo) e informação de controlo do processo."
+    },
+    {
+        question: "No ciclo fetch-decode-execute…",
+        options: [
+            "decode é a fase em que a unidade de controlo determina a operação realizar, a partir do opcode atual.",
+            "decode é a fase em que a unidade de controlo determina o endereço físico da RAM para executar uma operação de leitura.",
+            "fetch é a fase em que a unidade de controlo lê dados do programa a partir da memória.",
+            "execute é a fase em que a unidade de controlo incrementa o program counter."
+        ],
+        answer: "decode é a fase em que a unidade de controlo determina a operação realizar, a partir do opcode atual."
+    },
+    {
+        question: "A técnica de swaping…",
+        options: [
+            "permite transferir da memória principal para o armazenamento em massa um processo (ou parte dele) que se encontre em estado Waiting.",
+            "permite retirar da CPU um processo para executar outro processo Ready com maior prioridade.",
+            "permite retirar da CPU um processo que pediu uma operação de I/O, para executar outro processo Ready.",
+            "permite transferir da memória principal para o armazenamento em massa um processo (ou parte dele) que se encontre em estado Ready."
+        ],
+        answer: "permite transferir da memória principal para o armazenamento em massa um processo (ou parte dele) que se encontre em estado Ready."
+    },
+    {
+        question: "Quando ocorre uma mudança de contexto…",
+        options: [
+            "o SO salvaguarda o estado do processo em execução e o estado do processador.",
+            "o SO salvaguarda somente o estado do processo em execução.",
+            "o SO salvaguarda somente o estado do processador.",
+            "o SO recupera o processo do armazenamento em massa para a memória principal."
+        ],
+        answer: "o SO salvaguarda o estado do processo em execução e o estado do processador."
+    },
+    {
+        question: "Num sistema com escalonamento sem preempção…",
+        options: [
+            "o SO pode pausar a execução do processo na CPU para tratar uma interrupção de hardware.",
+            "um processo no estado Running pode passar para o estado Ready.",
+            "um processo no estado Ready pode passar para o estado Waiting.",
+            "o SO pode interromper o processo em execução para executar outro processo de maior prioridade."
+        ],
+        answer: "um processo no estado Running pode passar para o estado Ready."
+    },
+    {
+        question: "Os sistemas de tempo-real…",
+        options: [
+            "requerem que os resultados calculados sejam funcionalmente corretos e disponibilizados dentro de prazos definidos.",
+            "caracterizam-se pela elevada interatividade com o utilizador.",
+            "implementam-se sobretudo em computadores de alto-desempenho.",
+            "são utilizados predominantemente em simulações (meteorologia, farmacêutica, etc.)."
+        ],
+        answer: "requerem que os resultados calculados sejam funcionalmente corretos e disponibilizados dentro de prazos definidos."
+    },
+    {
+        question: "Uma das contribuições principais para o surgimento de sistemas interativos foi…",
+        options: [
+            "o terminal remoto com ecrã e teclado.",
+            "a utilização de unidades de fita magnética como meio de armazenamento em massa.",
+            "a adoção da arquitetura de Von Neumann.",
+            "o monitor residente, capaz de carregar-e-executar automaticamente diversos programas em sequência."
+        ],
+        answer: "o terminal remoto com ecrã e teclado."
+    },
+    {
+        question: "Quando termina uma operação de I/O, o estado do processo que a invocou passa a…",
+        options: [
+            "Ready.",
+            "Waiting.",
+            "Running.",
+            "Terminated."
+        ],
+        answer: "Ready."
+    },
+    {
+        question: "Sobre termos “multiprogramação” e “paralelismo”…",
+        options: [
+            "é possível ter multiprogramação num computador com uma única CPU.",
+            "têm o mesmo significado.",
+            "é possível ter paralelismo num computador com uma única CPU.",
+            "é possível ter multiprogramação e paralelismo num computador com uma única CPU."
+        ],
+        answer: "é possível ter multiprogramação num computador com uma única CPU."
+    },
+    {
+        question: "Num Sistema multiprogramado, o Sistema Operativo é responsável pelo escalonamento do conjunto de processos ativos.",
+        options: [
+            "O escalonador de curto prazo determina qual o próximo processo a ser executado pelo processador.",
+            "O escalonador de longo prazo determina qual o próximo processo a ser executado pelo processador.",
+            "O escalonador de curto prazo determina quando um processo deve entrar para o conjunto de processos ativos.",
+            "O escalonador de longo prazo é executado muito frequentemente."
+        ],
+        answer: "O escalonador de curto prazo determina qual o próximo processo a ser executado pelo processador."
+    },
+    {
+        question: "Os periféricos de entrada e saída (I/O devices)...",
+        options: [
+            "têm um controlador incorporado que opera o dispositivo autonomamente do processador.",
+            "são habitualmente tão rápidos quanto os processadores.",
+            "são habitualmente tão rápidos quanto a memória.",
+            "nunca podem comunicar diretamente com a memória."
+        ],
+        answer: "têm um controlador incorporado que opera o dispositivo autonomamente do processador."
+    },
+    {
+        question: "O termo 'mudança de contexto' refere-se a...",
+        options: [
+            "esperar que a execução de um processo complete para executar o processo seguinte na fila de trabalhos.",
+            "interromper a execução de um processo para executar outro processo.",
+            "abortar a execução de um processo para executar outro processo.",
+            "interromper a execução de um processo para o sistema operativo tratar uma interrupção de hardware, e depois retomar a execução do mesmo processo."
+        ],
+        answer: "interromper a execução de um processo para executar outro processo."
+    },
+    {
+        question: "A técnica de swapping é utilizada para disponibilizar mais memória física aos processos que precisem.",
+        options: [
+            "O swap out é realizado quando não é possível disponibilizar memória ao processo em execução, sendo este processo transferido da memória principal para o disco.",
+            "Esta técnica consiste em adiar a entrada de um novo processo para o conjunto de processos ativos, até haver memória suficiente para o executar.",
+            "O swapping era uma técnica essencial nos sistemas de processamento por lotes.",
+            "O swap in é realizado quando um processo é transferido do disco para a memória principal quando precisa de ser executado."
+        ],
+        answer: "O swap out é realizado quando não é possível disponibilizar memória ao processo em execução, sendo este processo transferido da memória principal para o disco."
+    },
+    {
+        question: "O processamento por lotes (batch processing) é caracterizado pelo carregamento e execução automática de uma sequência de programas, definida pelo operador do computador.",
+        options: [
+            "O processamento por lotes permite que múltiplos programas intercalem a sua execução no processador.",
+            "O processamento por lotes é aplicável a conjuntos de programas não-interativos.",
+            "Consegue-se uma boa utilização da capacidade de processamento com processos que realizem várias operações de I/O.",
+            "Nos sistemas não-interativos, este tipo de processamento permite que o programador supervisione a execução do programa e corrija erros imediatamente."
+        ],
+        answer: "O processamento por lotes é aplicável a conjuntos de programas não-interativos."
+    },
+    {
+        question: "A memória principal de um computador permite dois tipos de operações: leitura e escrita.",
+        options: [
+            "As operações de leitura e de escrita eliminam os valores armazenados nos endereços acedidos.",
+            "As operações de leitura e de escrita preservam os valores armazenados nos endereços acedidos.",
+            "Só as operações de leitura eliminam os valores armazenados dos endereços acedidos.",
+            "Só as operações de leitura preservam os valores armazenados nos endereços acedidos."
+        ],
+        answer: "As operações de leitura e de escrita preservam os valores armazenados nos endereços acedidos."
+    },
+    {
+        question: "Os sistemas interativos multi-utilizador com partilha de tempo apresentam várias vantagens em relação aos anteriores sistemas não-interativos. Qual das seguintes afirmações não é verdadeira?",
+        options: [
+            "Permitem programas que solicitam dados ao utilizador em tempo de execução.",
+            "A partilha simultânea do computador por vários utilizadores permite uma maior utilização do processador.",
+            "Os programas podem ser executados em sequência, sem intervenção do operador.",
+            "Um utilizador pode acompanhar a execução do seu programa e corrigi-lo imediatamente para o voltar a executar."
+        ],
+        answer: "Os programas podem ser executados em sequência, sem intervenção do operador."
+    },
+    {
+        question: "Um cluster é constituído por...",
+        options: [
+            "diversos computadores ligados através de uma rede local de alto débito, que realizam a computação de forma muito coesa, como se fosse um sistema multiprocessador.",
+            "múltiplos processadores que partilham recursos através de um barramento comum.",
+            "múltiplos processadores que comunicam entre si, partilham dispositivos e memória principal através de um barramento comum, mas cada processador tem a sua memória privada.",
+            "diversos computadores autónomos que comunicam entre si através de uma rede de comunicações, cooperando para executar um programa."
+        ],
+        answer: "diversos computadores autónomos que comunicam entre si através de uma rede de comunicações, cooperando para executar um programa."
+    },
+    {
+        question: "Um processador com uma arquitetura de 64 bits...",
+        options: [
+            "realiza operações aritméticas de 32 bits duas vezes mais rápido do que operações aritméticas de 64 bits.",
+            "está limitado a operar valores inteiros com tamanho máximo de 64 bits.",
+            "não pode representar inteiros de 8 bits.",
+            "tem registos de uso genérico de 64 bits."
+        ],
+        answer: "tem registos de uso genérico de 64 bits."
+    },
+    {
+        question: "O Process Control Block (PCB) de um processo mantém o registo sobre...",
+        options: [
+            "o identificador do processo e a informação de controlo do processador.",
+            "o identificador e a informação de controlo do processo e o identificador do processador.",
+            "o identificador e a informação de controlo do processo e o estado do processador aquando da última comutação do processo.",
+            "o identificador do processador e o estado do processo."
+        ],
+        answer: "o identificador e a informação de controlo do processo e o estado do processador aquando da última comutação do processo."
+    },
+    {
+        question: "No ciclo fetch-decode-execute...",
+        options: [
+            "fetch é a fase em que a unidade de controlo lê dados do programa a partir da memória.",
+            "execute é a fase em que a CPU realiza a operação identificada pelo opcode atual.",
+            "decode é a fase em que a CPU realiza a operação identificada pelo opcode atual.",
+            "execute é a fase em que a unidade de controlo incrementa o program counter."
+        ],
+        answer: "fetch é a fase em que a unidade de controlo lê dados do programa a partir da memória."
+    },
+    {
+        question: "Um sistema operativo multitarefa...",
+        options: [
+            "minimiza o número de operações de I/O realizadas.",
+            "permite ter vários processos carregados simultaneamente em memória e intercalar a sua execução no processador.",
+            "permite ter vários processos carregados simultaneamente em memória e executá-los sequencialmente no processador.",
+            "requer menos memória porque apenas permite ter um programa carregado na memória."
+        ],
+        answer: "permite ter vários processos carregados simultaneamente em memória e intercalar a sua execução no processador."
+    },
+    {
+        question: "Um dos principais objetivos de um sistema operativo é...",
+        options: [
+            "disponibilizar às aplicações acesso direto ao hardware.",
+            "gerir os recursos de um computador de uma forma eficiente e eficaz.",
+            "permitir às aplicações coordenarem entre si a utilização dos recursos partilhados.",
+            "permitir que os processos realizem o tratamento das interrupções."
+        ],
+        answer: "gerir os recursos de um computador de uma forma eficiente e eficaz."
+    },
+    {
+        question: "Num sistema com escalonamento preemptivo, o sistema operativo suspende o processo P1 em execução para executar outro processo P2 de maior prioridade. O processo P1 sofre uma transição...",
+        options: [
+            "Running para Ready.",
+            "Running para Waiting.",
+            "Waiting para Ready.",
+            "Ready para Running."
+        ],
+        answer: "Running para Ready."
+    },
+    {
+        question: "Num sistema com escalonamento com preempção, qual é a transição de estados que não é possível...",
+        options: [
+            "Waiting para Running.",
+            "Waiting para Ready.",
+            "Running para Waiting.",
+            "Running para Ready."
+        ],
+        answer: "Waiting para Running."
+    },
+    {
+        question: "Um programa interpretado...",
+        options: [
+            "é escrito numa linguagem de alto-nível e traduzido por um interpretador em tempo de execução.",
+            "é escrito numa linguagem de alto-nível e traduzido para um ficheiro executável por um interpretador.",
+            "é escrito em assembly e traduzido pelo assembler em tempo de execução.",
+            "é escrito numa linguagem de alto-nível e compilado para um ficheiro executável."
+        ],
+        answer: "é escrito numa linguagem de alto-nível e traduzido por um interpretador em tempo de execução."
+    },
+    {
+        question: "O linker é um utilitário que...",
+        options: [
+            "liga as palavras-chave de um programa interpretado ao código objeto a ser executado.",
+            "permite depurar um programa, permitindo pausar o programa em pontos-chave e inspecionar a memória.",
+            "liga as instruções de um programa aos seus respectivos dados em tempo de execução.",
+            "liga o código objeto do programa com o código objeto fornecido por bibliotecas."
+        ],
+        answer: "liga o código objeto do programa com o código objeto fornecido por bibliotecas."
+    },
+    {
+        question: "Os sistemas de tempo-real...",
+        options: [
+            "são sistemas computacionais que precisam de interagir instantaneamente com o utilizador.",
+            "são sistemas computacionais que têm que entregar os resultados da computação instantaneamente.",
+            "são sistemas utilizados predominantemente em simulações científicas.",
+            "são sistemas computacionais que têm que entregar os resultados da computação dentro de janelas temporais para operar corretamente."
+        ],
+        answer: "são sistemas computacionais que têm que entregar os resultados da computação dentro de janelas temporais para operar corretamente."
+    },
+    {
+        question: "Quando termina uma operação de I/O lançada por um processo P1...",
+        options: [
+            "é enviada uma interrupção ao processo P1 que atualiza o seu estado para Ready.",
+            "é enviada uma interrupção ao sistema operativo, que atualiza o estado do processo P1 para Ready.",
+            "é enviada uma interrupção ao processo P1 que atualiza o seu estado para Running.",
+            "é enviada uma interrupção ao sistema operativo, que atualiza o estado do processo P1 para Terminated."
+        ],
+        answer: "é enviada uma interrupção ao sistema operativo, que atualiza o estado do processo P1 para Ready."
+    },
+    {
+        question: "Um processador multi-core com quatro núcleos de processamento...",
+        options: [
+            "permite a execução paralela de processos, mas não permite multiprogramação.",
+            "permite executar, no máximo, 4 processos em paralelo.",
+            "permite executar mais do que 4 processos em paralelo.",
+            "permite multiprogramação mas não permite paralelismo."
+        ],
+        answer: "permite executar, no máximo, 4 processos em paralelo."
+    },
+    {
+        question: "Num sistema multiprogramado, o sistema operativo é responsável pelo escalonamento do conjunto de processos ativos.",
+        options: [
+            "O escalonador de longo prazo é responsável por gerir os processos que são transferidos entre memória primária e memória secundária.",
+            "O escalonador de curto prazo determina quando um processo novo deve entrar para o conjunto de processos ativos.",
+            "O escalonador de médio prazo determina quando um processo novo deve entrar para o conjunto de processos ativos.",
+            "O escalonador de médio prazo é responsável por gerir os processos que são transferidos entre memória primária e memória secundária."
+        ],
+        answer: "O escalonador de médio prazo é responsável por gerir os processos que são transferidos entre memória primária e memória secundária."
+    },
+    {
+        question: "Um processador implementa uma arquitetura do conjunto de instruções (Instruction Set Architecture, ISA).",
+        options: [
+            "Cada processador especifica a sua própria ISA, que lhe é exclusiva.",
+            "A ISA é a especificação de como os diversos elementos constitutivos de um processador se dispõem, interligam e como interoperam.",
+            "A ISA é um modelo abstrato que define, por exemplo, o conjunto de instruções e o conjunto de registos que um processador tem que suportar.",
+            "Um processador tem que suportar todo o conjunto de instruções que estão definidas na ISA, mas tem liberdade para especificar o seu endereçamento (i.e., o número de bits de um endereço)."
+        ],
+        answer: "A ISA é um modelo abstrato que define, por exemplo, o conjunto de instruções e o conjunto de registos que um processador tem que suportar."
+    },
+    {
+        question: "Um compilador serve para...",
+        options: [
+            "interpretar um programa em tempo de execução.",
+            "resolver as referências a símbolos e ligar ao código disponível em bibliotecas.",
+            "traduzir código numa linguagem de alto-nível para uma de mais baixo nível.",
+            "traduzir código em linguagem assembly para código máquina."
+        ],
+        answer: "traduzir código numa linguagem de alto-nível para uma de mais baixo nível."
+    },
+    {
+        question: "O depurador (debugger) é um utilitário que...",
+        options: [
+            "permite analisar a execução de um programa, permitindo pausar o programa em pontos-chave e inspecionar a memória.",
+            "liga as palavras-chave de um programa interpretado ao código objecto a ser executado.",
+            "liga as instruções de um programa aos seus respectivos dados em tempo de execução.",
+            "liga o código objecto do programa com o código objecto fornecido por bibliotecas."
+        ],
+        answer: "permite analisar a execução de um programa, permitindo pausar o programa em pontos-chave e inspecionar a memória."
+    },
+    {
+        question: "A microarquitectura é...",
+        options: [
+            "a implementação física num processador de uma arquitectura de um conjunto de instruções (ISA).",
+            "um modelo abstracto que define, por exemplo, o conjunto de instruções e o conjunto de registos que um processador tem que suportar.",
+            "igual para dois processadores diferentes que implementem a mesma arquitectura de conjunto de instruções (ISA).",
+            "a interface (conjunto de instruções) que um processador fornece, independentemente da forma como fisicamente organiza os seus componentes."
+        ],
+        answer: "a implementação física num processador de uma arquitectura de um conjunto de instruções (ISA)."
+    },
+    {
+        question: "A memória principal de um computador permite dois tipos de operações: leitura e escrita.",
+        options: [
+            "Só as operações de leitura modificam os valores armazenados dos endereços acedidos.",
+            "As operações de leitura e de escrita preservam os valores armazenados nos endereços acedidos.",
+            "Só as operações de escrita modificam os valores armazenados nos endereços acedidos.",
+            "As operações de leitura e de escrita modificam os valores armazenados nos endereços acedidos."
+        ],
+        answer: "As operações de leitura e de escrita preservam os valores armazenados nos endereços acedidos."
+    },
+    {
+        question: "Um dos principais objetivos de um sistema operativo é...",
+        options: [
+            "facilitar às aplicações o acesso direto ao hardware.",
+            "permitir às aplicações coordenarem entre si a utilização dos recursos partilhados.",
+            "permitir às aplicações uma opção de acesso ao hardware através dos seus serviços, mantendo a possibilidade de acesso directo às aplicações que requerem desempenho optimizado.",
+            "disponibilizar às aplicações uma interface que uniformiza a operação dos recursos do sistema, ocultando os detalhes específicos do hardware de cada computador em particular."
+        ],
+        answer: "disponibilizar às aplicações uma interface que uniformiza a operação dos recursos do sistema, ocultando os detalhes específicos do hardware de cada computador em particular."
+    },
+    {
+        question: "O processamento por lotes (batch processing) é caracterizado pelo carregamento e execução automática de uma sequência de programas, definida pelo operador do computador.",
+        options: [
+            "Nos sistemas não-interactivos, este tipo de processamento permite que o programador supervisione a execução do programa e corrija erros imediatamente.",
+            "O processamento por lotes é aplicável a conjuntos de programas não-interactivos.",
+            "Consegue-se uma boa utilização da capacidade de processamento com processos que realizem várias operações de I/O.",
+            "O processamento por lotes permite que múltiplos programas intercalem a sua execução no processador."
+        ],
+        answer: "O processamento por lotes é aplicável a conjuntos de programas não-interactivos."
+    },
+    {
+        question: "Um processo…",
+        options: [
+            "é um espaço de endereçamento que contém exclusivamente as instruções de um programa.",
+            "é uma estrutura lógica que contém os dados de controlo de um programa necessários para o sistema operativo gerir os programas em execução.",
+            "é um espaço de endereçamento que contém exclusivamente os dados de um programa.",
+            "é uma instância de um programa (ou parte de um programa) em execução."
+        ],
+        answer: "é uma instância de um programa (ou parte de um programa) em execução."
+    },
+    {
+        question: "Os sistemas operativos multitarefa permitem...",
+        options: [
+            "intercalar a execução de vários processos carregados simultaneamente em memória, maximizando a utilização do processador.",
+            "executar em menos tempo lotes de processos que praticamente não realizam operações de I/O (i.e. processos processador-intensivos).",
+            "maximizar a utilização de memória, carregando simultaneamente vários processos.",
+            "intercalar a execução de vários processos carregados simultaneamente em memória, minimizando a utilização dos dispositivos de I/O."
+        ],
+        answer: "intercalar a execução de vários processos carregados simultaneamente em memória, maximizando a utilização do processador."
+    },
+    {
+        question: "Num sistema distribuído...",
+        options: [
+            "vários computadores são ligados entre si através de uma rede local de alto débito, sendo a computação gerida de forma centralizada.",
+            "múltiplos processadores partilham recursos através de um barramento comum.",
+            "múltiplos processadores partilham dispositivos I/O através de um barramento comum e comunicam entre si, mas cada processador tem a sua memória privada.",
+            "diversos computadores comunicam entre si e partilham recursos através de uma rede de comunicação, cooperando para executar um programa."
+        ],
+        answer: "diversos computadores comunicam entre si e partilham recursos através de uma rede de comunicação, cooperando para executar um programa."
+    },
+    {
+        question: "O Process Control Block (PCB) de um processo mantém o registo sobre...",
+        options: [
+            "o identificador e a informação de controlo do processo e o estado do processador aquando da última comutação do processo.",
+            "o identificador e a informação de controlo do processo e o identificador do processador.",
+            "o identificador do processador e o estado do processo.",
+            "o identificador do processo e a informação de controlo do processador."
+        ],
+        answer: "o identificador e a informação de controlo do processo e o estado do processador aquando da última comutação do processo."
+    },
+    {
+        question: "No ciclo fetch-decode-execute...",
+        options: [
+            "a unidade de controlo lê da memória o código da próxima operação na fase fetch.",
+            "a unidade de controlo incrementa o program counter na fase decode.",
+            "os dados a operar são lidos da memória na fase fetch.",
+            "decode é a fase em que a CPU realiza a operação identificada pelo código de operação actual."
+        ],
+        answer: "a unidade de controlo lê da memória o código da próxima operação na fase fetch."
+    },
+    {
+        question: "A técnica de swapping é utilizada para disponibilizar mais memória física aos processos que precisem.",
+        options: [
+            "O swap in é realizado quando um processo é transferido do disco para a memória principal, quando ainda aguarda pela conclusão de uma operação I/O.",
+            "O swap out é realizado quando um processo que não se encontra pronto para executar é transferido da memória principal para o disco.",
+            "O swap out é realizado quando não é possível disponibilizar memória ao processo em execução, sendo este processo transferido da memória principal para o disco.",
+            "Esta técnica consiste em adiar a entrada de um novo processo para o conjunto de processos activos, até haver memória suficiente para o executar."
+        ],
+        answer: "O swap out é realizado quando não é possível disponibilizar memória ao processo em execução, sendo este processo transferido da memória principal para o disco."
+    },
+    {
+        question: "O termo 'mudança de contexto' refere-se a...",
+        options: [
+            "abortar a execução de um processo para executar outro processo.",
+            "interromper a execução de um processo para o sistema operativo tratar uma interrupção de hardware, e depois retomar a execução do mesmo processo.",
+            "esperar que a execução de um processo complete para executar o processo seguinte na fila de trabalhos.",
+            "interromper a execução de um processo para executar outro processo."
+        ],
+        answer: "interromper a execução de um processo para executar outro processo."
+    },
+    {
+        question: "Num sistema com escalonamento com preempção, qual é a transição de estados que não é possível...",
+        options: [
+            "Ready para Waiting.",
+            "Running para Waiting.",
+            "Running para Ready.",
+            "Running para Terminated."
+        ],
+        answer: "Ready para Waiting."
+    },
+    {
+        question: "Os sistemas de tempo-real...",
+        options: [
+            "são sistemas computacionais que têm que operar o mais depressa possível.",
+            "são os sistemas que continuam correctos, mesmo que disponibilizem um resultado errado desde que dentro do prazo especificado.",
+            "são sistemas computacionais que falham quando um resultado correcto é disponibilizado depois de um prazo especificado.",
+            "são sistemas computacionais que precisam de interagir instantaneamente com utilizador."
+        ],
+        answer: "são sistemas computacionais que falham quando um resultado correcto é disponibilizado depois de um prazo especificado."
+    },
+    {
+        question: "Os sistemas interactivos multi-utilizador com partilha de tempo apresentam várias vantagens em relação aos anteriores sistemas não-interactivos. Qual das seguintes afirmações não é verdadeira?",
+        options: [
+            "Os sistemas multi-utilizador interactivos exploram o facto de estatisticamente uma sessão interactiva utilizar pouco processador enquanto o computador aguarda pelas acções do utilizador, para suportar várias sessões simultâneas.",
+            "Os sistemas multi-utilizador não necessitam de protecção de memória.",
+            "Num sistema interactivo, um utilizador pode acompanhar a execução do seu programa e corrigi-lo imediatamente para o voltar a executar.",
+            "Permitem programas que solicitam dados ao utilizador em tempo de execução."
+        ],
+        answer: "Os sistemas multi-utilizador não necessitam de protecção de memória."
+    },
+    {
+        question: "Quando uma operação de I/O lançada por um processo P1 é concluída...",
+        options: [
+            "o sistema operativo recebe uma interrupção, modificando o estado do processo P1 de Waiting para Ready.",
+            "é enviada uma interrupção ao sistema operativo, que actualiza o estado do processo P1 de Ready para Running.",
+            "é enviada uma interrupção ao processo P1 que modifica o seu estado de Waiting para Ready.",
+            "o processo P1 recebe uma interrupção e actualiza o seu estado de Ready para Running."
+        ],
+        answer: "o sistema operativo recebe uma interrupção, modificando o estado do processo P1 de Waiting para Ready."
+    },
+    {
+        question: "Num sistema com escalonamento preemptivo, o sistema operativo suspende o processo P1 em execução para executar outro processo P2 de maior prioridade. O processo P2 sofre uma transição...",
+        options: [
+            "Ready para Running.",
+            "Running para Ready.",
+            "Running para Waiting.",
+            "Waiting para Ready."
+        ],
+        answer: "Ready para Running."
+    },
+    {
+        question: "Num sistema multiprogramado, o sistema operativo é responsável pelo escalonamento do conjunto de processos ativos.",
+        options: [
+            "O escalonador de longo prazo determina quando um processo novo deve entrar para o conjunto de processos ativos.",
+            "O escalonador de longo prazo é responsável por gerir os processos que são transferidos entre memória primária e memória secundária.",
+            "O escalonador de curto prazo determina quando um processo novo deve entrar para o conjunto de processos ativos.",
+            "O escalonador de curto prazo é responsável por gerir os processos que são transferidos entre memória primária e memória secundária."
+        ],
+        answer: "O escalonador de longo prazo determina quando um processo novo deve entrar para o conjunto de processos ativos."
+    },
+    {
+        question: "Um processador com apenas um núcleo de processamento...",
+        options: [
+            "permite a execução paralela de processos, mas não permite multiprogramação.",
+            "permite multiprogramação mas não permite paralelismo.",
+            "permite executar, no máximo, 4 processos em paralelo.",
+            "permite executar vários processos em paralelo."
+        ],
+        answer: "permite multiprogramação mas não permite paralelismo."
+    }
 ];
-
-//const questions = [
-//     // Questões anteriores...
-//     {
-//         question: "Nova pergunta...",
-//         options: [
-//         "Opção A",
-//         "Opção B",
-//         "Opção C",
-//         "Opção D"
-//         ],
-//         answer: "Opção correta"
-//     },
-//     // Mais questões...
-// ];
