@@ -72,7 +72,7 @@ function selectOption(selectedOption) {
         score++;
     } else {
         feedbackEl.style.color = 'red';
-        feedbackEl.innerHTML = `Errado! A resposta correta é: ${currentQuestion.answer}`;
+        feedbackEl.innerHTML = `Errado!`;
     }
 
     // Desabilita todas as opções após seleção

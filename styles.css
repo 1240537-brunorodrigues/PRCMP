@@ -1,8 +1,11 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #ececec; /* Fundo mais suave, evitando o branco total */
+    color: #333;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -10,56 +13,97 @@ body {
 }
 
 #quiz-container {
-    background-color: #fff;
-    padding: 20px 40px;
+    background-color: #fafafa;
+    padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 500px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 90%;
+    border: 1px solid #ccc;
 }
 
+#quiz-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: #222;
+    text-align: center; /* Centralizando os títulos */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Estilização da questão */
 #question {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    line-height: 1.5em;
 }
 
+/* Opções de resposta */
 .option {
     display: block;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #e7e7e7;
-    border: none;
+    margin: 15px 0;
+    padding: 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
     text-align: left;
-    transition: background-color 0.3s;
-}
-
-.option:hover {
-    background-color: #d4d4d4;
-}
-
-#feedback {
-    margin-top: 20px;
-    font-weight: bold;
-}
-
-#next-btn, #restart-btn, #start-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
     font-size: 1em;
 }
 
-#next-btn:hover, #restart-btn:hover, #start-btn:hover {
-    background-color: #007bb5;
+.option:hover {
+    background-color: #eaeaea;
+    border-color: #ccc;
+}
+
+/* Feedback e pontuação */
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #444;
 }
 
 #score {
     font-size: 1.2em;
-    margin-top: 20px;
+    margin-top: 25px;
+    color: #333;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+/* Botões */
+#next-btn, #restart-btn, #start-btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #2f4858;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+    transition: background-color 0.3s;
+    width: auto; /* Garante que os botões tenham largura automática */
+}
+
+/* Efeito hover nos botões */
+#next-btn:hover, #restart-btn:hover, #start-btn:hover {
+    background-color: #243645;
+}
+
+/* Centralizando os botões e final */
+#quiz-screen, #end-screen, #start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Garante que o flex container ocupe toda a largura do container principal */
+}
+
+/* Garantindo que os botões não ocupem toda a largura */
+#next-btn, #restart-btn, #start-btn {
+    width: auto; /* Garante que os botões tenham largura automática */
+    align-self: center; /* Centraliza individualmente caso necessário */
 }
