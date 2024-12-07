@@ -679,7 +679,7 @@ const questions = [
             "as três fases do ciclo fetch-decode-execute em paralelo, para uma única instrução.",
             "múltiplas instruções do mesmo programa, em paralelo, na mesma unidade de execução."
         ],
-        answer: "múltiplas instruções do mesmo programa, em paralelo, em unidades de execução distintas da CPU."
+        answer: "múltiplas instruções do mesmo programa, em paralelo, em unidades de execução distintas."
     },
     {
         question: "Nas operações lógicas binárias com cadeias de bits (bitwise operations)...",

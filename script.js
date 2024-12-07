@@ -38,6 +38,8 @@ function getRandomQuestions(questionArray, num) {
     return shuffled.slice(0, Math.min(num, questionArray.length));
 }
 
+//Implementar randomizar a ordem das opções para não se decorar a posição
+
 // Função para carregar a pergunta atual
 function loadQuestion() {
     feedbackEl.innerHTML = '';
