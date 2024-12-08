@@ -1990,5 +1990,755 @@ const questions = [
             "permite executar vários processos em paralelo."
         ],
         answer: "permite multiprogramação mas não permite paralelismo."
+    },
+    {
+        question: "Qual o estado de um processo após a execução de uma operação de I/O?",
+        options: [
+            "Running.",
+            "Ready.",
+            "Waiting.",
+            "Nenhuma das anteriores."
+        ],
+        answer: "Waiting."
+    },
+    {
+        question: "Um processo é um fluxo de atividade:",
+        options: [
+            "Automática que executa ações determinadas por um programa.",
+            "Autónoma que executa ações determinadas por um programa.",
+            "Aleatória que executa ações determinadas por um programa.",
+            "Manual que executa ações determinadas por um programa."
+        ],
+        answer: "Autónoma que executa ações determinadas por um programa."
+    },
+    {
+        question: "Um sistema operativo multitarefa visa gerir a execução de processos de modo a:",
+        options: [
+            "Maximizar a utilização de memória.",
+            "Maximizar a utilização do processador.",
+            "Maximizar a utilização dos dispositivos de I/O.",
+            "Minimizar a utilização dos dispositivos de I/O."
+        ],
+        answer: "Maximizar a utilização do processador."
+    },
+    {
+        question: "Um sistema operativo moderno permite a criação de processos:",
+        options: [
+            "Através de ações de utilizadores.",
+            "Através de ações de outros processos.",
+            "Que podem comunicar com outros processos.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "Quais das seguintes são razões para se interromper um processo em execução?",
+        options: [
+            "Ter excedido o tempo de execução atribuído.",
+            "Ter ocorrido uma falta de memória.",
+            "Ter executado uma instrução inválida.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "Em termos de transições de estados de um processo:",
+        options: [
+            "A sequência Ready => Waiting => Running é válida.",
+            "A sequência Ready => Running => Waiting é válida.",
+            "A sequência Running => Ready => Waiting é válida.",
+            "Nenhuma das anteriores."
+        ],
+        answer: "A sequência Ready => Running => Waiting é válida."
+    },
+    {
+        question: "Um processo a correr na CPU necessita de uma operação de I/O, tendo este sido escalonado de forma não preemptiva e por prioridades:",
+        options: [
+            "O processo é removido da UCP e passa para o estado de Waiting.",
+            "O processo continua na UCP e passa para o estado de Waiting.",
+            "O processo é removido da UCP e passa para o estado de New.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "O processo é removido da UCP e passa para o estado de Waiting."
+    },
+    {
+        question: "Num sistema operativo moderno:",
+        options: [
+            "Só pode haver uma fila para os processos prontos a executar.",
+            "Pode haver várias filas para os processos que esperam por recursos de memória.",
+            "Pode haver várias filas onde estão processos à espera de operações I/O terminadas.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "O escalonamento preemptivo por prioridades fixas não é eficaz no escalonamento de processos em sistemas desktop, dado que:",
+        options: [
+            "Este tipo de escalonamento apenas é adequado para processos que não efetuem operações de I/O.",
+            "Favorece os processos limitados por I/O em prejuízo dos processos limitados pela UCP.",
+            "Este tipo de escalonamento é mais adaptado a sistemas monoprocesso.",
+            "Favorece os processos computacionalmente pesados em detrimento dos processos limitados por I/O de igual prioridade."
+        ],
+        answer: "Favorece os processos computacionalmente pesados em detrimento dos processos limitados por I/O de igual prioridade."
+    },
+    {
+        question: "Na comutação entre processos faz-se, entre outras operações:",
+        options: [
+            "A salvaguarda do processo que vai ter acesso à UCP.",
+            "A salvaguarda do processo que vai perder o acesso à UCP.",
+            "A salvaguarda do processo que vai perder acesso à UCP, apesar da informação do PCB estar danificada.",
+            "Nenhuma das anteriores."
+        ],
+        answer: "A salvaguarda do processo que vai perder o acesso à UCP."
+    },
+    {
+        question: "Em termos de estados dos processos (PCBs), as filas de escalonamento do SO:",
+        options: [
+            "Não permitem conhecer o estado de todos os processos.",
+            "Permitem conhecer o estado de todos os processos em execução.",
+            "Permitem conhecer o estado de todos os processos anteriormente terminados.",
+            "Permitem conhecer o estado de todos os processos existentes."
+        ],
+        answer: "Permitem conhecer o estado de todos os processos existentes."
+    },
+    {
+        question: "Relativamente aos equipamentos que recorriam ao processamento em série:",
+        options: [
+            "As operações de I/O tinham que ser definidas pelos programas.",
+            "A primeira versão já possuía um sistema operativo residente em memória.",
+            "Possibilitavam que vários programas corressem concorrentemente.",
+            "A primeira versão já possuía o utilitário Monitor."
+        ],
+        answer: "As operações de I/O tinham que ser definidas pelos programas."
+    },
+    {
+        question: "Em termos de escalonador de longo prazo:",
+        options: [
+            "Pode ser invocado apenas quando vários processos terminam.",
+            "Tende a ser lento.",
+            "É executado com alta frequência.",
+            "Nenhuma das anteriores é verdadeira."
+        ],
+        answer: "Tende a ser lento."
+    },
+    {
+        question: "O escalonador de médio-prazo:",
+        options: [
+            "Pode remover processos da memória.",
+            "Pode retomar mais tarde a execução de processos.",
+            "Recorre a Swapping para lidar com falta de memória.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "Um supercomputador atual é essencialmente composto por:",
+        options: [
+            "Imensas UCPs e pouca memória RAM.",
+            "Algumas UCPs e imensa memória RAM.",
+            "Imensas UCPs e dispositivos de I/O.",
+            "Imensas UCPs, imensa memória RAM e dispositivos de I/O."
+        ],
+        answer: "Imensas UCPs, imensa memória RAM e dispositivos de I/O."
+    },
+    {
+        question: "Num sistema operativo atual:",
+        options: [
+            "Processos e subprocessos alternam a execução de instruções e operações de I/O.",
+            "Só subprocessos alternam a execução de instruções e operações de I/O.",
+            "Só processos alternam a execução de instruções e operações de I/O.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Processos e subprocessos alternam a execução de instruções e operações de I/O."
+    },
+    {
+        question: "Na elaboração de um programa é normal que a ordem de utilização das ferramentas auxiliares envolvidas seja a seguinte:",
+        options: [
+            "Editor, compilador e linker.",
+            "Editor, linker e compilador.",
+            "Linker, editor e compilador.",
+            "Linker, compilador e editor."
+        ],
+        answer: "Editor, compilador e linker."
+    },
+    {
+        question: "Num sistema computacional com uma palavra de 64 bits:",
+        options: [
+            "O maior valor inteiro possível de ser representado é sempre superior ao de um sistema computacional com uma palavra de 32 bits.",
+            "Os registos de uso genérico são de 16 bits.",
+            "Sempre que se armazena um byte em memória são desperdiçados 7 bytes de memória.",
+            "Pode ser utilizado um esquema de endereçamento de memória de 64 bits."
+        ],
+        answer: "Pode ser utilizado um esquema de endereçamento de memória de 64 bits."
+    },
+    {
+        question: "Em termos de critérios de desempenho computacional orientado para o utilizador, o mais adequado a sistemas interativos é:",
+        options: [
+            "Turnaround time.",
+            "Tempo de resposta.",
+            "Deadline.",
+            "Predictabilidade."
+        ],
+        answer: "Tempo de resposta."
+    },
+    {
+        question: "Uma das vantagens do escalonamento com preempção é:",
+        options: [
+            "Favorecer os processos do tipo l/0-Bound.",
+            "Executar mais processos num determinado período de tempo.",
+            "Favorecer os processos do tipo CPU-Bound.",
+            "Nenhuma das anteriores são verdadeiras."
+        ],
+        answer: "Executar mais processos num determinado período de tempo."
+    },
+    {
+        question: "O que acontece quando um processo requisita uma operação de I/0 num escalonamento Shortest-Job-First (SJF):",
+        options: [
+            "O processo é removido da UCP e passa para o estado de Waiting.",
+            "O processo continua na UCP e passa para o estado de Waiting.",
+            "O processo é removido da UCP e passa para o estado de Ready.",
+            "Nenhuma das anteriores são verdadeiras."
+        ],
+        answer: "O processo é removido da UCP e passa para o estado de Waiting."
+    },
+    {
+        question: "Sistemas multiprogramados:",
+        options: [
+            "São mais fáceis de desenvolver do que sistemas monoprogramados.",
+            "Todos os processos são executados de forma mais célere.",
+            "Permitem dividir a capacidade de processamento pelos processos ativos.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Permitem dividir a capacidade de processamento pelos processos ativos."
+    },
+    {
+        question: "Qual o estado de um processo após a execução de uma operação de l/0:",
+        options: [
+            "Running.",
+            "Ready.",
+            "Waiting.",
+            "New."
+        ],
+        answer: "Ready."
+    },
+    {
+        question: "Relativamente ao método de escalonamento Multinível por Filas, de prioridades fixas, podemos afirmar que:",
+        options: [
+            "A sua performance está relacionada com o método de escalonamento de curto-prazo utilizado em cada uma das filas.",
+            "A sua performance está relacionada com o método para atribuir os processos às várias filas.",
+            "Cada fila tem prioridade absoluta sobre a outra fila.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "Relativamente aos sistemas interativos podemos afirmar que:",
+        options: [
+            "O requisito essencial é ter um bom tempo de resposta e dividir os recursos de forma equitativa.",
+            "O requisito essencial é permitir a interação entre os vários processos existentes na fila de ready.",
+            "O requisito essencial é permitir a interação em 'tempo real' entre os vários processos existentes na fila de ready.",
+            "Nenhuma das anteriores é verdadeira."
+        ],
+        answer: "O requisito essencial é ter um bom tempo de resposta e dividir os recursos de forma equitativa."
+    },
+    {
+        question: "O método de escalonamento Round-Robin (RR):",
+        options: [
+            "Favorece os processos do tipo CPU-Bound.",
+            "É denominado de 'processor sharing' se o time quantum for 'pequeno'.",
+            "Se o time quantum for 'grande' aproxima-se do escalonamento First-Come First-Served (FCFS).",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "Sobre multiprogramação e paralelismo pode-se dizer que:",
+        options: [
+            "Paralelismo real só é possível em computadores com processador multicore e/ou múltiplos processadores.",
+            "O uso de multiprogramação só tem interesse quando o sistema operativo suporta múltiplos utilizadores.",
+            "O uso de multiprogramação só tem interesse quando o sistema operativo utiliza um escalonamento do tipo preemptivo.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Paralelismo real só é possível em computadores com processador multicore e/ou múltiplos processadores."
+    },
+    {
+        question: "A comutação de processos:",
+        options: [
+            "Substitui sempre o processo que se encontra em execução pelo processo que se encontra em primeiro lugar na fila de ready.",
+            "Permite que seja substituído um processo em execução por outro processo existente na fila de ready de acordo com a regra de escalonamento vigente.",
+            "Não permite a execução de nenhuma operação de I/O do processo que é retirado de execução.",
+            "É feita sem qualquer intervenção do Sistema Operativo."
+        ],
+        answer: "Permite que seja substituído um processo em execução por outro processo existente na fila de ready de acordo com a regra de escalonamento vigente."
+    },
+    {
+        question: "Num sistema operativo a utilizar um algoritmo de escalonamento, por prioridades fixas, não preemptivo, podemos dizer que:",
+        options: [
+            "Os processos de mais baixa prioridade podem nunca ser selecionados para executar.",
+            "Os processos de igual prioridade podem nunca ser selecionados para executar.",
+            "Os processos ficam sempre no estado de running até terminarem a sua execução.",
+            "Um sistema deste tipo não permite a execução de outros processos quando um processo executa operações de I/O."
+        ],
+        answer: "Os processos de mais baixa prioridade podem nunca ser selecionados para executar."
+    },
+    {
+        question: "Um processo é:",
+        options: [
+            "Um programa com vários fluxos de execução.",
+            "Um programa em execução.",
+            "Um programa apenas com um fluxo de execução.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Um programa em execução."
+    },
+    {
+        question: "Um dos objetivos de um Sistema Operativo ser organizado em camadas é:",
+        options: [
+            "Permitir o acesso direto ao hardware por parte das aplicações.",
+            "Obrigar as aplicações a utilizar os serviços fornecidos pelo Sistema Operativo para aceder ao hardware.",
+            "Obrigar a que cada camada tenha as suas próprias funções para aceder diretamente ao hardware.",
+            "Nenhuma das anteriores é verdadeira."
+        ],
+        answer: "Obrigar as aplicações a utilizar os serviços fornecidos pelo Sistema Operativo para aceder ao hardware."
+    },
+    {
+        question: "Num Sistema Operativo de tempo-real:",
+        options: [
+            "A execução de um processo depende da obtenção de um resultado correto.",
+            "A perda de um deadline, associada ao processo, leva sempre à falha do sistema.",
+            "A execução de um processo depende da obtenção de um resultado antes de um determinado tempo (deadline).",
+            "Apenas pode ser executado um processo quando o anterior tiver terminado."
+        ],
+        answer: "A execução de um processo depende da obtenção de um resultado antes de um determinado tempo (deadline)."
+    },
+    {
+        question: "O Programa utilitário Monitor de Controlo:",
+        options: [
+            "Permite ao utilizador carregar os seus programas em memória, editá-los e verificar a sua execução.",
+            "Permite a execução das operações necessárias através de comandos do monitor.",
+            "Possui rotinas de I/O reutilizáveis.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "Qual dos seguintes escalonadores permite controlar o número máximo de processos no estado de ready:",
+        options: [
+            "Os escalonadores de longo e médio prazo.",
+            "Apenas o escalonador de médio prazo.",
+            "Apenas o escalonador de curto prazo.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Os escalonadores de longo e médio prazo."
+    },
+    {
+        question: "Os sistemas multiprocessador com n processadores:",
+        options: [
+            "Assimétricos não partilham o barramento, o relógio e a memória.",
+            "Simétricos não partilham o barramento, o relógio e a memória.",
+            "Simétricos podem correr em paralelo até n processos.",
+            "Simétricos podem correr em paralelo, no máximo, n-1 processos."
+        ],
+        answer: "Simétricos podem correr em paralelo até n processos."
+    },
+    {
+        question: "Um sistema composto por várias unidades de processamento interligadas por uma rede de comunicação permite:",
+        options: [
+            "Que um programa seja executado transparentemente num sistema multiprocessador simétrico.",
+            "Que várias partes do mesmo programa possam ser executadas em diferentes máquinas.",
+            "Que um programa seja executado transparentemente num sistema multiprocessador assimétrico.",
+            "Que várias partes do mesmo programa possam ser executadas num sistema multiprocessador simétrico."
+        ],
+        answer: "Que várias partes do mesmo programa possam ser executadas em diferentes máquinas."
+    },
+    {
+        question: "Ordene temporalmente (do mais antigo para o mais recente) o aparecimento dos seguintes tipos de Sistemas Operativos:",
+        options: [
+            "Batch, Serial Processing, Time Sharing e Multiprogramming.",
+            "Serial Processing, Batch, Multiprogramming e Time Sharing.",
+            "Batch, Serial Processing, Multiprogramming e Time Sharing.",
+            "Serial Processing, Batch, Time Sharing e Multiprogramming."
+        ],
+        answer: "Serial Processing, Batch, Multiprogramming e Time Sharing."
+    },
+    {
+        question: "Swapping é um mecanismo que:",
+        options: [
+            "Permite retirar um processo da memória principal que se encontre no estado de running.",
+            "Apenas pode ser utilizado em conjunto com o critério de escalonamento Round-Robin para retirar processos da memória principal para a memória secundária.",
+            "Apenas pode ser utilizado em conjunto com o critério de escalonamento First-Come First Served para retirar processos da memória principal para a memória secundária.",
+            "Permite retirar um processo da memória principal que se encontre no estado de ready."
+        ],
+        answer: "Permite retirar um processo da memória principal que se encontre no estado de ready."
+    },
+    {
+        question: "Relativamente ao método de escalonamento Multinível com realimentação por Filas, podemos afirmar que:",
+        options: [
+            "O método de escalonamento de curto prazo utilizado em cada uma das filas afeta a sua performance.",
+            "A sua performance está, apenas relacionada, com o método para atribuir os processos às filas.",
+            "A sua performance está relacionada, apenas, com o método de escalonamento de curto prazo utilizado em cada uma das filas.",
+            "Favorece os processos de I/O-Bound."
+        ],
+        answer: "O método de escalonamento de curto prazo utilizado em cada uma das filas afeta a sua performance."
+    },
+    {
+        question: "Durante a execução de um processo o que pode acontecer?",
+        options: [
+            "O processo emitir um pedido I/O, e consequentemente ser colocado numa fila de um I/O device, passando para o estado de ready.",
+            "O tempo que o escalonador tinha atribuído ao processo (time slice) terminar e consequentemente ser colocado no estado de ready.",
+            "O processo pode criar um novo processo, ficando à espera que ele termine e consequentemente ser colocado na fila dos ready.",
+            "O processo pode ser removido da UCP em consequência duma interrupção passando sempre para o estado de waiting."
+        ],
+        answer: "O tempo que o escalonador tinha atribuído ao processo (time slice) terminar e consequentemente ser colocado no estado de ready."
+    },
+    {
+        question: "O sistema de interrupções:",
+        options: [
+            "Não permite assinalar o acontecimento de um evento.",
+            "Desencadeia a transferência do controlo para um serviço do kernell do Sistema Operativo.",
+            "Não obriga ao armazenamento do endereço da instrução interrompida.",
+            "Não é transparente para o processo que é interrompido."
+        ],
+        answer: "Desencadeia a transferência do controlo para um serviço do kernell do Sistema Operativo."
+    },
+    {
+        question: "Relativamente aos métodos de escalonamento First-Come First-Served (FCFS) e Round-Robin pode-se dizer que:",
+        options: [
+            "O FCFS favorece a multiprogramação.",
+            "Ambos favorecem os processos I/O-Bound.",
+            "O FCFS tem uma implementação mais complexa.",
+            "Ambos favorecem os processos CPU-Bound."
+        ],
+        answer: "Ambos favorecem os processos CPU-Bound."
+    },
+    {
+        question: "O escalonamento preemptivo por prioridades fixas, não é eficaz no escalonamento de processos em sistemas desktop, dado que:",
+        options: [
+            "Este tipo de escalonamento apenas é adequado para processos que não efectuem operações de I/O.",
+            "Aumenta o tempo de resposta de processos interactivos quando estão a concorrer com processos CPU-Bound de prioridade inferior.",
+            "Este tipo de escalonamento é mais adaptado a sistemas mono-processo.",
+            "Favorece os processos CPU-Bound em detrimento dos processos I/O Bound de igual prioridade."
+        ],
+        answer: "Favorece os processos CPU-Bound em detrimento dos processos I/O Bound de igual prioridade."
+    },
+    {
+        question: "Uma das vantagens do escalonamento com preempção é:",
+        options: [
+            "Favorecer os processos do tipo l/0-Bound.",
+            "Executar mais processos num determinado período de tempo.",
+            "Favorecer os processos do tipo CPU-Bound.",
+            "Nenhuma das anteriores são verdadeiras."
+        ],
+        answer: "Executar mais processos num determinado período de tempo."
+    },
+    {
+        question: "Num Sistema Operativo multitarefa, um programa:",
+        options: [
+            "É sempre constituído por um único processo.",
+            "É sempre constituído por vários processos.",
+            "Pode ser constituído por um ou por vários processos.",
+            "Nunca pode ser constituído por vários processos."
+        ],
+        answer: "Pode ser constituído por um ou por vários processos."
+    },
+    {
+        question: "O módulo de Gestão de Processos de um Sistema Operativo fornece serviços para:",
+        options: [
+            "O tratamento de interrupções.",
+            "A sincronização de processos.",
+            "A comunicação de processos.",
+            "Todas as anteriores."
+        ],
+        answer: "Todas as anteriores."
+    },
+    {
+        question: "Relativamente ao método de escalonamento Multi-nível com Realimentação por Filas:",
+        options: [
+            "O seu desempenho está relacionado, em parte, com o método de escalonamento de curto-prazo utilizado em cada uma das filas.",
+            "O seu desempenho está apenas relacionado com o método para atribuir os processos às filas.",
+            "O seu desempenho está relacionado exclusivamente com o método de escalonamento de curto-prazo utilizado em cada uma das filas.",
+            "Favorece os processos CPU-Bound."
+        ],
+        answer: "O seu desempenho está relacionado, em parte, com o método de escalonamento de curto-prazo utilizado em cada uma das filas."
+    },
+    {
+        question: "Os sistemas multi-processador, com n processadores:",
+        options: [
+            "Assimétricos não partilham o barramento, o relógio e a memória.",
+            "Simétricos não partilham o barramento, o relógio e a memória.",
+            "Simétricos podem correr em paralelo, até n processos, sem existir degradação no desempenho.",
+            "Simétricos podem correr em paralelo, no máximo n-1 processos, sem existir degradação no desempenho."
+        ],
+        answer: "Simétricos podem correr em paralelo, até n processos, sem existir degradação no desempenho."
+    },
+    {
+        question: "Swapping é um mecanismo que:",
+        options: [
+            "Permite retirar um processo da memória principal que se encontre no estado de running.",
+            "Apenas pode ser utilizado em conjunto com o critério de escalonamento Round-Robin para retirar processos da memória principal para a memória secundária.",
+            "Apenas pode ser utilizado em conjunto com o critério de escalonamento First-Come First-Served para retirar processos da memória principal para a memória secundária.",
+            "Permite retirar processos da memória principal que se encontrem no estado de ready."
+        ],
+        answer: "Permite retirar processos da memória principal que se encontrem no estado de ready."
+    },
+    {
+        question: "O escalonador de médio-prazo:",
+        options: [
+            "Pode remover processos da memória.",
+            "Pode retomar mais tarde a execução de processos.",
+            "Recorre a Swapping para lidar com falta de memória.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "Relativamente aos sistemas interativos podemos afirmar que:",
+        options: [
+            "O requisito essencial é ter um bom tempo de resposta e dividir os recursos de forma equitativa.",
+            "O requisito essencial é permitir a interação entre os vários processos existentes na fila de ready.",
+            "O requisito essencial é permitir a interação em 'tempo real' entre os vários processos existentes na fila de ready.",
+            "Nenhuma das anteriores é verdadeira."
+        ],
+        answer: "O requisito essencial é ter um bom tempo de resposta e dividir os recursos de forma equitativa."
+    },
+    {
+        question: "Se tivesse que escalonar um sistema multiutilizador e multitarefa qual das políticas de escalonamento lhe parece que seria a mais adequada, assumindo que desconhece os perfis de execução dos processos:",
+        options: [
+            "First-in First-out.",
+            "Escalonamento por prioridades.",
+            "Escalonamento multinível com realimentação por filas.",
+            "Round-Robin."
+        ],
+        answer: "Escalonamento multinível com realimentação por filas."
+    },
+    {
+        question: "Um processo é um fluxo de atividade:",
+        options: [
+            "Automática que executa ações determinadas por um programa.",
+            "Autónoma que executa ações determinadas por um programa.",
+            "Aleatória que executa ações determinadas por um programa.",
+            "Manual que executa ações determinadas por um programa."
+        ],
+        answer: "Autónoma que executa ações determinadas por um programa."
+    },
+    {
+        question: "Um sistema operativo multitarefa visa gerir a execução de processos de modo a:",
+        options: [
+            "Maximizar a utilização de memória.",
+            "Maximizar a utilização do processador.",
+            "Maximizar a utilização dos dispositivos de I/O.",
+            "Minimizar a utilização dos dispositivos de I/O."
+        ],
+        answer: "Maximizar a utilização do processador."
+    },
+    {
+        question: "Um dos objetivos da utilização de Máquinas Virtuais é:",
+        options: [
+            "Encapsular o hardware e o Sistema Operativo como se fossem hardware.",
+            "Permitir o acesso transparente a máquinas remotas que corram um Sistema Operativo diferente.",
+            "É suportar diferentes tipos de processadores na mesma máquina.",
+            "Nenhuma das anteriores."
+        ],
+        answer: "Encapsular o hardware e o Sistema Operativo como se fossem hardware."
+    },
+    {
+        question: "Na comutação entre processos faz-se, entre outras operações:",
+        options: [
+            "A salvaguarda do processo que vai ter acesso à UCP.",
+            "A salvaguarda do processo que vai perder o acesso à UCP.",
+            "A salvaguarda do processo que vai perder acesso à UCP, apesar da informação do PCB estar danificada.",
+            "Nenhuma das anteriores."
+        ],
+        answer: "A salvaguarda do processo que vai perder o acesso à UCP."
+    },
+    {
+        question: "Num sistema operativo multitarefa, um programa:",
+        options: [
+            "É sempre constituído por um único processo.",
+            "É sempre constituído por vários processos.",
+            "Pode ser constituído por um ou por vários processos.",
+            "Nunca pode ser constituído por vários processos."
+        ],
+        answer: "Pode ser constituído por um ou por vários processos."
+    },
+    {
+        question: "Qual o estado de um processo após a execução de uma operação de I/O:",
+        options: [
+            "Running.",
+            "New.",
+            "Waiting.",
+            "Nenhuma das anteriores."
+        ],
+        answer: "Waiting."
+    },
+    {
+        question: "Relativamente ao método de escalonamento Multinível por Filas, de prioridades fixas, podemos afirmar que:",
+        options: [
+            "A sua performance está relacionada com o método de escalonamento de curto-prazo utilizado em cada uma das filas.",
+            "A sua performance está relacionada com o método para atribuir os processos às várias filas.",
+            "Cada fila tem prioridade absoluta sobre a outra fila.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Todas as anteriores são verdadeiras."
+    },
+    {
+        question: "Sistemas multiprogramados:",
+        options: [
+            "São mais fáceis de desenvolver do que sistemas monoprogramados.",
+            "Todos os processos são executados de forma mais célere.",
+            "Permitem dividir a capacidade de processamento pelos processos ativos.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Permitem dividir a capacidade de processamento pelos processos ativos."
+    },
+    {
+        question: "Relativamente ao tratamento por lotes podemos afirmar que:",
+        options: [
+            "Pretende automatizar a sequência de operações que envolvem a execução de um programa.",
+            "Pretende evitar a perda de tempo no acesso aos periféricos.",
+            "Pretende dar a cada processo uma fatia equitativa de tempo de processador.",
+            "Nenhuma das anteriores é verdadeira."
+        ],
+        answer: "Pretende automatizar a sequência de operações que envolvem a execução de um programa."
+    },
+    {
+        question: "Qual dos seguintes escalonadores determina qual o próximo processo a ser executado:",
+        options: [
+            "O escalonador de curto prazo.",
+            "O escalonador de médio prazo.",
+            "O escalonador de longo prazo.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "O escalonador de curto prazo."
+    },
+    {
+        question: "A comutação de processos:",
+        options: [
+            "Substitui sempre o processo que se encontra em execução por um processo que se encontra na fila de ready.",
+            "Obriga à paragem de qualquer operação de I/O do processo que é retirado de execução.",
+            "É feita sem qualquer intervenção do Sistema Operativo.",
+            "Nenhuma das anteriores."
+        ],
+        answer: "Substitui sempre o processo que se encontra em execução por um processo que se encontra na fila de ready."
+    },
+    {
+        question: "O que acontece quando um processo a correr na UCP requisita uma operação de I/O, tendo este sido escalonado de forma não preemptiva e por prioridades:",
+        options: [
+            "O processo é removido da UCP e passa para o estado de Waiting.",
+            "O processo continua na UCP e passa para o estado de Waiting.",
+            "O processo é removido da UCP e passa para o estado de Ready.",
+            "Nenhuma das anteriores são verdadeiras."
+        ],
+        answer: "O processo é removido da UCP e passa para o estado de Waiting."
+    },
+    {
+        question: "Os sistemas multiprocessador com n processadores:",
+        options: [
+            "Assimétricos não partilham o barramento, o relógio e a memória.",
+            "Simétricos não partilham o barramento, o relógio e a memória.",
+            "Simétricos podem correr em paralelo até n processos.",
+            "Simétricos podem correr em paralelo, no máximo, n-1 processos."
+        ],
+        answer: "Simétricos podem correr em paralelo até n processos."
+    },
+    {
+        question: "O escalonamento preemptivo por prioridades fixas não é eficaz no escalonamento de processos em sistemas desktop, dado que:",
+        options: [
+            "Este tipo de escalonamento apenas é adequado para processos que não efetuem operações de I/O.",
+            "Favorece os processos I/O-Bound em detrimento dos processos CPU-Bound.",
+            "Este tipo de escalonamento é mais adaptado a sistemas monoprocesso.",
+            "Favorece os processos CPU-Bound em detrimento dos processos I/O-Bound de igual prioridade."
+        ],
+        answer: "Favorece os processos CPU-Bound em detrimento dos processos I/O-Bound de igual prioridade."
+    },
+    {
+        question: "O Process Control Block (PCB) possui informação sobre:",
+        options: [
+            "Identificação do processo, informação do estado do processador e informação de controlo do processo.",
+            "Identificação do processador, informação relativa à zona de memória ocupada pelo processo e informação de controlo do processo.",
+            "Identificação do processador, estado do processador e informação de controlo do processo.",
+            "Informação do estado do processo e identificação do sistema operativo, em que o processo está a correr."
+        ],
+        answer: "Identificação do processo, informação do estado do processador e informação de controlo do processo."
+    },
+    {
+        question: "Num Sistema Operativo de tempo-real:",
+        options: [
+            "A execução de um processo depende não apenas da obtenção de um resultado correto, mas também da sua disponibilização de acordo com uma determinada deadline.",
+            "Se um processo concluir a sua computação com sucesso, mas antes da deadline associada ao processo, conduz à falha do sistema.",
+            "A perda de uma deadline, associada ao processo, leva sempre à falha do sistema.",
+            "Apenas pode ser executado um processo quando o anterior tiver terminado."
+        ],
+        answer: "A execução de um processo depende não apenas da obtenção de um resultado correto, mas também da sua disponibilização de acordo com uma determinada deadline."
+    },
+    {
+        question: "Relativamente aos equipamentos que recorriam ao processamento em série:",
+        options: [
+            "As operações de I/O tinham que ser definidas pelos programas.",
+            "A primeira versão já possuía um sistema operativo residente em memória.",
+            "Possibilitavam que vários programas corressem concorrentemente.",
+            "A primeira versão já possuía o utilitário Monitor."
+        ],
+        answer: "As operações de I/O tinham que ser definidas pelos programas."
+    },
+    {
+        question: "Um sistema composto por várias unidades de processamento interligadas por uma rede de comunicação permite:",
+        options: [
+            "Que um programa seja executado transparentemente num sistema multiprocessador simétrico.",
+            "Que várias partes do mesmo programa possam ser executadas em diferentes máquinas.",
+            "Que um programa seja executado transparentemente num sistema multiprocessador assimétrico.",
+            "Nenhuma das anteriores é verdadeira."
+        ],
+        answer: "Que várias partes do mesmo programa possam ser executadas em diferentes máquinas."
+    },
+    {
+        question: "Que escalonadores permitem controlar o número máximo de processos no estado de ready:",
+        options: [
+            "Os Escalonadores de longo e médio prazo.",
+            "Apenas o escalonador de médio prazo.",
+            "Os escalonadores de médio e curto prazo.",
+            "Nenhuma das anteriores."
+        ],
+        answer: "Os Escalonadores de longo e médio prazo."
+    },
+    {
+        question: "Ordene temporalmente (do mais antigo para o mais recente) o aparecimento dos seguintes tipos de Sistemas Operativos:",
+        options: [
+            "Batch, Serial Processing, Time Sharing e Multiprogramming.",
+            "Serial Processing, Batch, Multiprogramming e Time Sharing.",
+            "Batch, Serial Processing, Multiprogramming e Time Sharing.",
+            "Batch, Multiprogramming, Serial Processing e Time Sharing."
+        ],
+        answer: "Serial Processing, Batch, Multiprogramming e Time Sharing."
+    },
+    {
+        question: "Um processo é:",
+        options: [
+            "Um programa com vários fluxos de execução.",
+            "Um Programa em execução.",
+            "Um programa apenas com um fluxo de execução.",
+            "Todas as anteriores são verdadeiras."
+        ],
+        answer: "Um Programa em execução."
+    },
+    {
+        question: "Na elaboração de um programa é normal que a ordem de utilização das ferramentas auxiliares envolvidas seja a seguinte:",
+        options: [
+            "Editor, compilador e linker.",
+            "Editor, linker e compilador.",
+            "Linker, editor e compilador.",
+            "Linker, compilador e editor."
+        ],
+        answer: "Editor, compilador e linker."
+    },
+    {
+        question: "Num sistema computacional com uma palavra de 64 bits:",
+        options: [
+            "O maior valor inteiro possível de ser representado é sempre superior ao de um sistema computacional com uma palavra de 32 bits.",
+            "Os registos de uso genérico são de 16 bits.",
+            "Sempre que se armazena um byte em memória são desperdiçados 7 bytes de memória.",
+            "Pode ser utilizado um esquema de endereçamento de memória de 64 bits."
+        ],
+        answer: "O maior valor inteiro possível de ser representado é sempre superior ao de um sistema computacional com uma palavra de 32 bits."
     }
 ];

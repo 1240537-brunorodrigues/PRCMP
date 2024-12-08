@@ -38,8 +38,6 @@ function getRandomQuestions(questionArray, num) {
     return shuffled.slice(0, Math.min(num, questionArray.length));
 }
 
-//Implementar randomizar a ordem das opções para não se decorar a posição
-
 // Função para carregar a pergunta atual
 function loadQuestion() {
     feedbackEl.innerHTML = '';
@@ -54,7 +52,10 @@ function loadQuestion() {
     questionEl.innerHTML = `Questão ${currentQuestionIndex + 1} de ${TOTAL_QUESTIONS}: ${currentQuestion.question}`;
     optionsEl.innerHTML = '';
 
-    currentQuestion.options.forEach(option => {
+    // Embaralhar a ordem das opções
+    const shuffledOptions = [...currentQuestion.options].sort(() => 0.5 - Math.random());
+
+    shuffledOptions.forEach(option => {
         const button = document.createElement('button');
         button.classList.add('option');
         button.innerText = option;
