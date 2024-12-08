@@ -52,7 +52,7 @@ const questions = [
         answer: "Fornecer armazenamento de longo prazo para dados e programas, mesmo quando o computador está desligado."
     },
     {
-        question: "Qual dos seguintes aspectos não é geralmente especificado pela arquitetura do conjunto de instruções (Instruction Set Architecture, ISA)?",
+        question: "Qual dos seguintes aspetos não é geralmente especificado pela arquitetura do conjunto de instruções (Instruction Set Architecture, ISA)?",
         options: [
             "O conjunto de instruções suportado pela CPU.",
             "O tamanho e a organização dos registos.",
@@ -76,15 +76,15 @@ const questions = [
         options: [
             "impede que um processo modifique a sua pilha.",
             "impede a partilha de bibliotecas ligadas dinamicamente pelos vários processos.",
-            "impede que um processo modifique a sua seção de texto (ou código).",
+            "impede que um processo modifique a sua secção de texto (ou código).",
             "isola fisicamente cada processo atribuindo-o uma CPU dedicada."
         ],
-        answer: "impede que um processo modifique a sua seção de texto (ou código)."
+        answer: "impede que um processo modifique a sua secção de texto (ou código)."
     },
     {
         question: "A técnica de swapping permite...",
         options: [
-            "ter mais do que um processo activo no computador.",
+            "ter mais do que um processo ativo no computador.",
             "usar mais memória do que a memória física do computador.",
             "trocar o processo em execução pelo processador.",
             "executar processos que se encontram em memória secundária."
@@ -117,9 +117,9 @@ const questions = [
             "Têm de ser bastante responsivos na interação com o utilizador.",
             "Têm de realizar o maior número de cálculos por unidade de tempo.",
             "Têm de conseguir de lidar com um aumento no número de tarefas sem comprometer o desempenho geral.",
-            "Têm de determinar resultados correctos dentro de prazos temporais estritos."
+            "Têm de determinar resultados corretos dentro de prazos temporais estritos."
         ],
-        answer: "Têm de determinar resultados correctos dentro de prazos temporais estritos."
+        answer: "Têm de determinar resultados corretos dentro de prazos temporais estritos."
     },
     {
         question: "Em que consiste o conceito de sistemas de partilha de tempo (time-sharing)?",
@@ -136,7 +136,7 @@ const questions = [
         options: [
             "A preempção ocorre quando um processo atinge seu tempo máximo de execução permitido e é interrompido pela CPU para permitir que outro processo execute, garantindo que nenhum processo monopolize a CPU indefinidamente.",
             "A preempção ocorre quando um processo cede voluntariamente a CPU após a conclusão da sua execução, garantindo uma transição suave entre processos.",
-            "A preempção ocorre quando um processo cede voluntariamente a CPU durante uma seção de código computacionalmente intensiva, evitando o aquecimento da CPU.",
+            "A preempção ocorre quando um processo cede voluntariamente a CPU durante uma secção de código computacionalmente intensiva, evitando o aquecimento da CPU.",
             "A preempção ocorre quando um processo voluntariamente cede a CPU após atingir o limite de tempo máximo de execução, proporcionando uma execução justa ao conjunto de processos."
         ],
         answer: "A preempção ocorre quando um processo atinge seu tempo máximo de execução permitido e é interrompido pela CPU para permitir que outro processo execute, garantindo que nenhum processo monopolize a CPU indefinidamente."
@@ -145,7 +145,7 @@ const questions = [
         question: "Em Unix, a shell é uma interface da linha de comando que permite ao utilizador carregar e executar programas de uma forma simples. O Unix traz um conjunto de programas utilitários que realizam tarefas específicas muito frequentes.",
         options: [
             "O comando mv permite alterar o nome de um ficheiro.",
-            "O comando chmod é utilizado para compactar ficheiros e directórios num formato específico.",
+            "O comando chmod é utilizado para compactar ficheiros e diretórios num formato específico.",
             "O comando cp é usado para mover ficheiros ou diretórios de uma localização para outra, eliminando o original.",
             "O comando grep é utilizado para procurar ficheiros que correspondam a um critério baseado nas propriedades dos ficheiros."
         ],
@@ -219,7 +219,7 @@ const questions = [
             "a operação lógica OR com a máscara de bits 0xFFFF0000.",
             "a operação lógica AND com a máscara de bits 0x00000000."
         ],
-        answer: "a operação lógica AND com a máscara de bits 0xFFFF0000."
+        answer: "16 deslocamentos lógicos para a direita seguidos de 16 deslocamentos lógicos para a esquerda."
     },
     {
         question: "Os dispositivos de entrada e saída (I/O devices)...",
@@ -236,7 +236,7 @@ const questions = [
         options: [
             "ambos os termos referem-se ao mesmo conceito.",
             "a microarquitetura é a especificação que determina o conjunto de instruções suportado por uma família de processadores.",
-            "a ISA estabelece a organização física (eletrônica) do processador.",
+            "a ISA estabelece a organização física (eletrónica) do processador.",
             "a microarquitetura consiste numa implementação física que atende aos requisitos especificados pela ISA."
         ],
         answer: "a microarquitetura consiste numa implementação física que atende aos requisitos especificados pela ISA."
@@ -395,8 +395,8 @@ const questions = [
         question: "Quando abordamos os termos arquitetura do conjunto de instruções (ISA) e microarquitetura...",
         options: [
             "ambos os termos referem-se ao mesmo conceito.",
-            "a microarquitectura é a especificação que determina o conjunto de instruções suportado por uma família de processadores.",
-            "a ISA estabelece a organização física (eletrônica) do processador.",
+            "a microarquitetura é a especificação que determina o conjunto de instruções suportado por uma família de processadores.",
+            "a ISA estabelece a organização física (eletrónica) do processador.",
             "a microarquitetura consiste numa implementação física que atende aos requisitos especificados pela ISA."
         ],
         answer: "a microarquitetura consiste numa implementação física que atende aos requisitos especificados pela ISA."
@@ -477,9 +477,9 @@ const questions = [
             "Têm de ser bastante responsivos na interação com o utilizador.",
             "Têm de realizar o maior número de cálculos por unidade de tempo.",
             "Têm de conseguir de lidar com um aumento no número de tarefas sem comprometer o desempenho geral.",
-            "Têm de determinar resultados correctos dentro de prazos temporais estritos."
+            "Têm de determinar resultados corretos dentro de prazos temporais estritos."
         ],
-        answer: "Têm de determinar resultados correctos dentro de prazos temporais estritos."
+        answer: "Têm de determinar resultados corretos dentro de prazos temporais estritos."
     },
     {
         question: "Admita que tem um ficheiro de texto com um programa escrito numa determinada linguagem de programação de alto-nível.",
@@ -555,8 +555,8 @@ const questions = [
         question: "Quando abordamos os termos arquitetura do conjunto de instruções (ISA) e microarquitetura...",
         options: [
             "ambos os termos referem-se ao mesmo conceito.",
-            "a microarquitectura é a especificação que determina o conjunto de instruções suportado por uma família de processadores.",
-            "a ISA estabelece a organização física (eletrônica) do processador.",
+            "a microarquitetura é a especificação que determina o conjunto de instruções suportado por uma família de processadores.",
+            "a ISA estabelece a organização física (eletrónica) do processador.",
             "a microarquitetura consiste numa implementação física que atende aos requisitos especificados pela ISA."
         ],
         answer: "a microarquitetura consiste numa implementação física que atende aos requisitos especificados pela ISA."
@@ -637,9 +637,9 @@ const questions = [
             "Têm de ser bastante responsivos na interação com o utilizador.",
             "Têm de realizar o maior número de cálculos por unidade de tempo.",
             "Têm de conseguir de lidar com um aumento no número de tarefas sem comprometer o desempenho geral.",
-            "Têm de determinar resultados correctos dentro de prazos temporais estritos."
+            "Têm de determinar resultados corretos dentro de prazos temporais estritos."
         ],
-        answer: "Têm de determinar resultados correctos dentro de prazos temporais estritos."
+        answer: "Têm de determinar resultados corretos dentro de prazos temporais estritos."
     },
     {
         question: "A norma IEEE 754 permite...",
@@ -684,12 +684,12 @@ const questions = [
     {
         question: "Nas operações lógicas binárias com cadeias de bits (bitwise operations)...",
         options: [
-            "o operador AND é seleccionado para forçar o bit UM (1) em determinadas posições da cadeia.",
-            "o operador OR é seleccionado para forçar o bit UM (1) em determinadas posições da cadeia.",
-            "o operador NOT é seleccionado para negar os bits em determinadas posições da cadeia.",
-            "o operador XOR é seleccionado para forçar o bit ZERO (0) em determinadas posições da cadeia."
+            "o operador AND é selecionado para forçar o bit UM (1) em determinadas posições da cadeia.",
+            "o operador OR é selecionado para forçar o bit UM (1) em determinadas posições da cadeia.",
+            "o operador NOT é selecionado para negar os bits em determinadas posições da cadeia.",
+            "o operador XOR é selecionado para forçar o bit ZERO (0) em determinadas posições da cadeia."
         ],
-        answer: "o operador OR é seleccionado para forçar o bit UM (1) em determinadas posições da cadeia."
+        answer: "o operador OR é selecionado para forçar o bit UM (1) em determinadas posições da cadeia."
     },
     {
         question: "Há dois tipos de operações na memória principal: leitura e escrita.",
@@ -715,11 +715,11 @@ const questions = [
         question: "Identifique a afirmação falsa.",
         options: [
             "Uma interface da linha de comandos (a shell, por exemplo) é uma aplicação que permite ao utilizador invocar serviços do sistema operativo de forma simples.",
-            "O núcleo (ou kernel) do sistema operativo estabelece uma camada de abstração do hardware que impede as aplicações de acederem directamente os dispositivos do sistema.",
+            "O núcleo (ou kernel) do sistema operativo estabelece uma camada de abstração do hardware que impede as aplicações de acederem diretamente os dispositivos do sistema.",
             "O kernel gere todos os recursos do sistema, seguindo estratégias para uma utilização eficaz do sistema.",
-            "O sistema operativo expõe o hardware às aplicações, que podem aceder directamente aos controladores dos dispositivos."
+            "O sistema operativo expõe o hardware às aplicações, que podem aceder diretamente aos controladores dos dispositivos."
         ],
-        answer: "O sistema operativo expõe o hardware às aplicações, que podem aceder directamente aos controladores dos dispositivos."
+        answer: "O sistema operativo expõe o hardware às aplicações, que podem aceder diretamente aos controladores dos dispositivos."
     },
     {
         question: "Numa mudança de contexto...",
@@ -775,8 +775,8 @@ const questions = [
         question: "Num sistema com escalonamento sem preempção um processo termina a sua execução.",
         options: [
             "O processo passa do estado Running para o estado Waiting.",
-            "O escalonador selecciona um processo no estado Waiting para executar a seguir.",
-            "O escalonador selecciona um processo no estado Running para executar a seguir.",
+            "O escalonador seleciona um processo no estado Waiting para executar a seguir.",
+            "O escalonador seleciona um processo no estado Running para executar a seguir.",
             "O processo encontrava-se no estado Running antes de terminar."
         ],
         answer: "O processo passa do estado Running para o estado Waiting."
@@ -816,7 +816,7 @@ const questions = [
         options: [
             "Copiar os valores dos registos do processador para o bloco de controlo (Process Control Block, PCB) do processo que estava a ser executado (Running ).",
             "Admitir um processo novo (New ) para o conjunto de processos prontos (Ready ).",
-            "Seleccionar o próximo processo a executar, do conjunto de processos prontos (Ready ).",
+            "Selecionar o próximo processo a executar, do conjunto de processos prontos (Ready ).",
             "Restaurar os valores nos registos do processador a partir do bloco de controlo (Process Control Block, PCB) do processo que foi escalonado para execução."
         ],
         answer: "Admitir um processo novo (New ) para o conjunto de processos prontos (Ready )."
@@ -865,7 +865,7 @@ const questions = [
         question: "Na arquitetura de Von Neumann...",
         options: [
             "a memória ROM faz parte do subsistema de I/O.",
-            "o processador executa instruções directamente obtidas do disco.",
+            "o processador executa instruções diretamente obtidas do disco.",
             "o processador é fabricado com o programa já implementado na sua construção.",
             "as instruções e os dados de um programa em execução coabitam em memória."
         ],
@@ -926,13 +926,13 @@ const questions = [
         options: [
             "Copiar os valores dos registos do processador para o bloco de controlo (Process Control Block, PCB) do processo que estava a ser executado (Running ).",
             "Admitir um processo novo (New ) para o conjunto de processos prontos (Ready ).",
-            "Seleccionar o próximo processo a executar, do conjunto de processos prontos (Ready ).",
+            "Selecionar o próximo processo a executar, do conjunto de processos prontos (Ready ).",
             "Restaurar os valores nos registos do processador a partir do bloco de controlo (Process Control Block, PCB) do processo que foi escalonado para execução."
         ],
         answer: "Admitir um processo novo (New ) para o conjunto de processos prontos (Ready )."
     },
     {
-        question: "Assuma dois processadores P1 e P2 substancialmente diferentes um do outro, nomeadamente no número de componentes eletrônicos que cada um indica ter. Ambos implementam a mesma arquitetura do conjunto de instruções (Instruction Set Architecture, ISA). Qual das seguintes afirmações é falsa?",
+        question: "Assuma dois processadores P1 e P2 substancialmente diferentes um do outro, nomeadamente no número de componentes eletrónicos que cada um indica ter. Ambos implementam a mesma arquitetura do conjunto de instruções (Instruction Set Architecture, ISA). Qual das seguintes afirmações é falsa?",
         options: [
             "Ambos os processadores são capazes de executar o mesmo código-máquina, produzindo os mesmos resultados.",
             "Os diferentes números de componentes refletem diferenças nas decisões de projeto, devidas a vários tipos de otimizações como, por exemplo, desempenho, caches, uso de energia ou preço.",
@@ -964,12 +964,12 @@ const questions = [
     {
         question: "Os computadores digitais contemporâneos operam exclusivamente símbolos binários.",
         options: [
-            "A conversão de um inteiro decimal para binário pode resultar numa representação inexacta (i.e. com erro).",
+            "A conversão de um inteiro decimal para binário pode resultar numa representação inexata (i.e. com erro).",
             "Um número racional com representação finita em decimal é sempre convertido num número racional também com representação finita em binário. Desta forma, não há introdução de erro desde que haja um número de bits suficientes.",
-            "Um número racional com representação finita em decimal pode ser convertido num número racional com representação infinita periódica em binário. Neste caso, há introdução de erro porque não há um número de bits suficientes para representar o valor de forma exacta.",
+            "Um número racional com representação finita em decimal pode ser convertido num número racional com representação infinita periódica em binário. Neste caso, há introdução de erro porque não há um número de bits suficientes para representar o valor de forma exata.",
             "Um número racional tem de ser convertido em número inteiro, pois não é existe representação para a vírgula decimal num computador."
         ],
-        answer: "Um número racional com representação finita em decimal pode ser convertido num número racional com representação infinita periódica em binário. Neste caso, há introdução de erro porque não há um número de bits suficientes para representar o valor de forma exacta."
+        answer: "Um número racional com representação finita em decimal pode ser convertido num número racional com representação infinita periódica em binário. Neste caso, há introdução de erro porque não há um número de bits suficientes para representar o valor de forma exata."
     },
     {
         question: "Num sistema com escalonamento preventivo (preemptive scheduling )...",
@@ -1092,7 +1092,7 @@ const questions = [
         answer: "por vários computadores que cooperam entre si, executando cada um parte de uma aplicação e comunicando através de uma rede de comunicações."
     },
     {
-        question: "A técnica de swaping permite...",
+        question: "A técnica de swapping permite...",
         options: [
             "libertar memória às custas de um processo que é enviado parcial ou totalmente da memória principal para o disco.",
             "libertar memória enviando parcial ou totalmente da memória principal para o disco, o processo que está no estado Running.",
@@ -1126,10 +1126,10 @@ const questions = [
         options: [
             "ambos os termos referem-se ao mesmo conceito.",
             "a microarquitetura é a especificação que define o conjunto de instruções que o processador suporta.",
-            "a ISA define o esquema eletrônico do processador.",
-            "a microarquitetura é a implementação eletrônica (física) que realiza o conjunto de instruções suportado pelo processador."
+            "a ISA define o esquema eletrónico do processador.",
+            "a microarquitetura é a implementação eletrónica (física) que realiza o conjunto de instruções suportado pelo processador."
         ],
-        answer: "a microarquitetura é a implementação eletrônica (física) que realiza o conjunto de instruções suportado pelo processador."
+        answer: "a microarquitetura é a implementação eletrónica (física) que realiza o conjunto de instruções suportado pelo processador."
     },
     {
         question: "Os sistemas multi-utilizador caracterizam-se por permitir múltiplos programas carregados em memória prontos para ser executados de forma concorrente.",
@@ -1502,7 +1502,7 @@ const questions = [
         answer: "decode é a fase em que a unidade de controlo determina a operação realizar, a partir do opcode atual."
     },
     {
-        question: "A técnica de swaping…",
+        question: "A técnica de swapping…",
         options: [
             "permite transferir da memória principal para o armazenamento em massa um processo (ou parte dele) que se encontre em estado Waiting.",
             "permite retirar da CPU um processo para executar outro processo Ready com maior prioridade.",
@@ -1736,7 +1736,7 @@ const questions = [
         options: [
             "liga as palavras-chave de um programa interpretado ao código objeto a ser executado.",
             "permite depurar um programa, permitindo pausar o programa em pontos-chave e inspecionar a memória.",
-            "liga as instruções de um programa aos seus respectivos dados em tempo de execução.",
+            "liga as instruções de um programa aos seus respetivos dados em tempo de execução.",
             "liga o código objeto do programa com o código objeto fornecido por bibliotecas."
         ],
         answer: "liga o código objeto do programa com o código objeto fornecido por bibliotecas."
@@ -1785,7 +1785,7 @@ const questions = [
         question: "Um processador implementa uma arquitetura do conjunto de instruções (Instruction Set Architecture, ISA).",
         options: [
             "Cada processador especifica a sua própria ISA, que lhe é exclusiva.",
-            "A ISA é a especificação de como os diversos elementos constitutivos de um processador se dispõem, interligam e como interoperam.",
+            "A ISA é a especificação de como os diversos elementos constitutivos de um processador se dispõem, interligam e como inter-operam.",
             "A ISA é um modelo abstrato que define, por exemplo, o conjunto de instruções e o conjunto de registos que um processador tem que suportar.",
             "Um processador tem que suportar todo o conjunto de instruções que estão definidas na ISA, mas tem liberdade para especificar o seu endereçamento (i.e., o número de bits de um endereço)."
         ],
@@ -1805,21 +1805,21 @@ const questions = [
         question: "O depurador (debugger) é um utilitário que...",
         options: [
             "permite analisar a execução de um programa, permitindo pausar o programa em pontos-chave e inspecionar a memória.",
-            "liga as palavras-chave de um programa interpretado ao código objecto a ser executado.",
-            "liga as instruções de um programa aos seus respectivos dados em tempo de execução.",
-            "liga o código objecto do programa com o código objecto fornecido por bibliotecas."
+            "liga as palavras-chave de um programa interpretado ao código objeto a ser executado.",
+            "liga as instruções de um programa aos seus respetivos dados em tempo de execução.",
+            "liga o código objeto do programa com o código objeto fornecido por bibliotecas."
         ],
         answer: "permite analisar a execução de um programa, permitindo pausar o programa em pontos-chave e inspecionar a memória."
     },
     {
-        question: "A microarquitectura é...",
+        question: "A microarquitetura é...",
         options: [
-            "a implementação física num processador de uma arquitectura de um conjunto de instruções (ISA).",
-            "um modelo abstracto que define, por exemplo, o conjunto de instruções e o conjunto de registos que um processador tem que suportar.",
-            "igual para dois processadores diferentes que implementem a mesma arquitectura de conjunto de instruções (ISA).",
+            "a implementação física num processador de uma arquitetura de um conjunto de instruções (ISA).",
+            "um modelo abstrato que define, por exemplo, o conjunto de instruções e o conjunto de registos que um processador tem que suportar.",
+            "igual para dois processadores diferentes que implementem a mesma arquitetura de conjunto de instruções (ISA).",
             "a interface (conjunto de instruções) que um processador fornece, independentemente da forma como fisicamente organiza os seus componentes."
         ],
-        answer: "a implementação física num processador de uma arquitectura de um conjunto de instruções (ISA)."
+        answer: "a implementação física num processador de uma arquitetura de um conjunto de instruções (ISA)."
     },
     {
         question: "A memória principal de um computador permite dois tipos de operações: leitura e escrita.",
@@ -1836,7 +1836,7 @@ const questions = [
         options: [
             "facilitar às aplicações o acesso direto ao hardware.",
             "permitir às aplicações coordenarem entre si a utilização dos recursos partilhados.",
-            "permitir às aplicações uma opção de acesso ao hardware através dos seus serviços, mantendo a possibilidade de acesso directo às aplicações que requerem desempenho optimizado.",
+            "permitir às aplicações uma opção de acesso ao hardware através dos seus serviços, mantendo a possibilidade de acesso direto às aplicações que requerem desempenho otimizado.",
             "disponibilizar às aplicações uma interface que uniformiza a operação dos recursos do sistema, ocultando os detalhes específicos do hardware de cada computador em particular."
         ],
         answer: "disponibilizar às aplicações uma interface que uniformiza a operação dos recursos do sistema, ocultando os detalhes específicos do hardware de cada computador em particular."
@@ -1844,12 +1844,12 @@ const questions = [
     {
         question: "O processamento por lotes (batch processing) é caracterizado pelo carregamento e execução automática de uma sequência de programas, definida pelo operador do computador.",
         options: [
-            "Nos sistemas não-interactivos, este tipo de processamento permite que o programador supervisione a execução do programa e corrija erros imediatamente.",
-            "O processamento por lotes é aplicável a conjuntos de programas não-interactivos.",
+            "Nos sistemas não-interativos, este tipo de processamento permite que o programador supervisione a execução do programa e corrija erros imediatamente.",
+            "O processamento por lotes é aplicável a conjuntos de programas não-interativos.",
             "Consegue-se uma boa utilização da capacidade de processamento com processos que realizem várias operações de I/O.",
             "O processamento por lotes permite que múltiplos programas intercalem a sua execução no processador."
         ],
-        answer: "O processamento por lotes é aplicável a conjuntos de programas não-interactivos."
+        answer: "O processamento por lotes é aplicável a conjuntos de programas não-interativos."
     },
     {
         question: "Um processo…",
@@ -1907,7 +1907,7 @@ const questions = [
             "O swap in é realizado quando um processo é transferido do disco para a memória principal, quando ainda aguarda pela conclusão de uma operação I/O.",
             "O swap out é realizado quando um processo que não se encontra pronto para executar é transferido da memória principal para o disco.",
             "O swap out é realizado quando não é possível disponibilizar memória ao processo em execução, sendo este processo transferido da memória principal para o disco.",
-            "Esta técnica consiste em adiar a entrada de um novo processo para o conjunto de processos activos, até haver memória suficiente para o executar."
+            "Esta técnica consiste em adiar a entrada de um novo processo para o conjunto de processos ativos, até haver memória suficiente para o executar."
         ],
         answer: "O swap out é realizado quando não é possível disponibilizar memória ao processo em execução, sendo este processo transferido da memória principal para o disco."
     },
@@ -1935,29 +1935,29 @@ const questions = [
         question: "Os sistemas de tempo-real...",
         options: [
             "são sistemas computacionais que têm que operar o mais depressa possível.",
-            "são os sistemas que continuam correctos, mesmo que disponibilizem um resultado errado desde que dentro do prazo especificado.",
-            "são sistemas computacionais que falham quando um resultado correcto é disponibilizado depois de um prazo especificado.",
+            "são os sistemas que continuam corretos, mesmo que disponibilizem um resultado errado desde que dentro do prazo especificado.",
+            "são sistemas computacionais que falham quando um resultado correto é disponibilizado depois de um prazo especificado.",
             "são sistemas computacionais que precisam de interagir instantaneamente com utilizador."
         ],
-        answer: "são sistemas computacionais que falham quando um resultado correcto é disponibilizado depois de um prazo especificado."
+        answer: "são sistemas computacionais que falham quando um resultado correto é disponibilizado depois de um prazo especificado."
     },
     {
-        question: "Os sistemas interactivos multi-utilizador com partilha de tempo apresentam várias vantagens em relação aos anteriores sistemas não-interactivos. Qual das seguintes afirmações não é verdadeira?",
+        question: "Os sistemas interativos multi-utilizador com partilha de tempo apresentam várias vantagens em relação aos anteriores sistemas não-interativos. Qual das seguintes afirmações não é verdadeira?",
         options: [
-            "Os sistemas multi-utilizador interactivos exploram o facto de estatisticamente uma sessão interactiva utilizar pouco processador enquanto o computador aguarda pelas acções do utilizador, para suportar várias sessões simultâneas.",
-            "Os sistemas multi-utilizador não necessitam de protecção de memória.",
-            "Num sistema interactivo, um utilizador pode acompanhar a execução do seu programa e corrigi-lo imediatamente para o voltar a executar.",
+            "Os sistemas multi-utilizador interativos exploram o facto de estatisticamente uma sessão interativa utilizar pouco processador enquanto o computador aguarda pelas ações do utilizador, para suportar várias sessões simultâneas.",
+            "Os sistemas multi-utilizador não necessitam de proteção de memória.",
+            "Num sistema interativo, um utilizador pode acompanhar a execução do seu programa e corrigi-lo imediatamente para o voltar a executar.",
             "Permitem programas que solicitam dados ao utilizador em tempo de execução."
         ],
-        answer: "Os sistemas multi-utilizador não necessitam de protecção de memória."
+        answer: "Os sistemas multi-utilizador não necessitam de proteção de memória."
     },
     {
         question: "Quando uma operação de I/O lançada por um processo P1 é concluída...",
         options: [
             "o sistema operativo recebe uma interrupção, modificando o estado do processo P1 de Waiting para Ready.",
-            "é enviada uma interrupção ao sistema operativo, que actualiza o estado do processo P1 de Ready para Running.",
+            "é enviada uma interrupção ao sistema operativo, que atualiza o estado do processo P1 de Ready para Running.",
             "é enviada uma interrupção ao processo P1 que modifica o seu estado de Waiting para Ready.",
-            "o processo P1 recebe uma interrupção e actualiza o seu estado de Ready para Running."
+            "o processo P1 recebe uma interrupção e atualiza o seu estado de Ready para Running."
         ],
         answer: "o sistema operativo recebe uma interrupção, modificando o estado do processo P1 de Waiting para Ready."
     },
@@ -2395,11 +2395,11 @@ const questions = [
         question: "O sistema de interrupções:",
         options: [
             "Não permite assinalar o acontecimento de um evento.",
-            "Desencadeia a transferência do controlo para um serviço do kernell do Sistema Operativo.",
+            "Desencadeia a transferência do controlo para um serviço do kernel do Sistema Operativo.",
             "Não obriga ao armazenamento do endereço da instrução interrompida.",
             "Não é transparente para o processo que é interrompido."
         ],
-        answer: "Desencadeia a transferência do controlo para um serviço do kernell do Sistema Operativo."
+        answer: "Desencadeia a transferência do controlo para um serviço do kernel do Sistema Operativo."
     },
     {
         question: "Relativamente aos métodos de escalonamento First-Come First-Served (FCFS) e Round-Robin pode-se dizer que:",
@@ -2414,8 +2414,8 @@ const questions = [
     {
         question: "O escalonamento preemptivo por prioridades fixas, não é eficaz no escalonamento de processos em sistemas desktop, dado que:",
         options: [
-            "Este tipo de escalonamento apenas é adequado para processos que não efectuem operações de I/O.",
-            "Aumenta o tempo de resposta de processos interactivos quando estão a concorrer com processos CPU-Bound de prioridade inferior.",
+            "Este tipo de escalonamento apenas é adequado para processos que não efetuem operações de I/O.",
+            "Aumenta o tempo de resposta de processos interativos quando estão a concorrer com processos CPU-Bound de prioridade inferior.",
             "Este tipo de escalonamento é mais adaptado a sistemas mono-processo.",
             "Favorece os processos CPU-Bound em detrimento dos processos I/O Bound de igual prioridade."
         ],
