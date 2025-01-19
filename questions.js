@@ -29,7 +29,7 @@ const questions = [
             "um programa em execução tem as instruções num ficheiro e os dados em memória.",
             "não é possível a execução de múltiplos programas simultaneamente."
         ],
-        answer: "um programa em execução tem as instruções num ficheiro e os dados em memória."
+        answer: "as instruções e os dados de um programa em execução são armazenados em memória, embora em regiões distintas."
     },
     {
         question: "Que função não faz parte das responsabilidades de um processador (CPU)?",
@@ -109,7 +109,7 @@ const questions = [
             "O programa controla diretamente o dispositivo, se o computador não tiver sistema operativo.",
             "O programa controla o dispositivo colocando a operação a realizar num endereço específico da memória."
         ],
-        answer: "O programa controla diretamente o dispositivo, após obter autorização do sistema operativo."
+        answer: "O programa controla diretamente o dispositivo, se o computador não tiver sistema operativo."
     },
     {
         question: "Os computadores que controlam sistemas físicos (e.g. automóveis, robôs) têm requisitos não-funcionais específicos.",
@@ -339,7 +339,7 @@ const questions = [
             "permite diminuir a taxa de instruções concluídas por unidade de tempo.",
             "duas ou mais instruções do mesmo programa são executadas simultaneamente em unidades de execução distintas da CPU."
         ],
-        answer: "duas ou mais instruções do mesmo programa são executadas simultaneamente em unidades de execução distintas da CPU."
+        answer: "instruções de programas distintos sejam executadas simultaneamente em núcleos de processamento (cores) diferentes."
     },
     {
         question: "As linguagens de programação de alto nível surgiram na década de 1960 e evoluíram desde então. Qual das seguintes opções é uma característica fundamental das linguagens de alto nível?",
@@ -779,7 +779,7 @@ const questions = [
             "O escalonador seleciona um processo no estado Running para executar a seguir.",
             "O processo encontrava-se no estado Running antes de terminar."
         ],
-        answer: "O processo passa do estado Running para o estado Waiting."
+        answer: "O processo encontrava-se no estado Running antes de terminar."
     },
     {
         question: "Num sistema com escalonamento preventivo (preemptive scheduling )...",
@@ -1009,7 +1009,7 @@ const questions = [
             "executam duas ou mais instruções em paralelo, em núcleos de processamento (cores) distintos.",
             "executam as três fases do ciclo fetch-decode-execute em paralelo, para três instruções consecutivas."
         ],
-        answer: "executam as três fases do ciclo fetch-decode-execute em paralelo, para uma única instrução."
+        answer: "executam as três fases do ciclo fetch-decode-execute em paralelo, para três instruções consecutivas."
     },
     {
         question: "Utiliza-se a representação em complemento para 2...",
@@ -1169,7 +1169,7 @@ const questions = [
             "o SO pode interromper a execução do processo no estado Running para tratar uma interrupção de hardware.",
             "o SO pode parar o processo no estado Running para executar outro processo de maior prioridade."
         ],
-        answer: "um processo no estado Running pode passar para o estado Ready."
+        answer: "o SO pode interromper a execução do processo no estado Running para tratar uma interrupção de hardware."
     },
     {
         question: "Num sistema com escalonamento com preempção, um processo que invoque uma operação I/O passa ao estado...",
@@ -1279,7 +1279,7 @@ const questions = [
             "Uma operação de acesso à memória, quer seja de leitura ou de escrita, destrói o conteúdo nos endereços acedidos.",
             "As operações de leitura e escrita são também possíveis em memória ROM."
         ],
-        answer: "As operações de leitura e escrita são também possíveis em memória ROM."
+        answer: "Uma operação de escrita destrói o conteúdo nos endereços acedidos."
     },
     {
         question: "Um cluster é composto...",
@@ -1369,7 +1369,7 @@ const questions = [
             "um processo no estado Waiting pode passar para o estado Running.",
             "o SO pode parar o processo no estado Running para executar outro processo de maior prioridade."
         ],
-        answer: "um processo no estado Running pode passar para o estado Ready."
+        answer: "um processo no estado Running pode passar para o estado Terminated."
     },
     {
         question: "Num sistema com escalonamento com preempção, um processo no estado New pode passar ao estado...",
@@ -1629,7 +1629,7 @@ const questions = [
             "Só as operações de leitura eliminam os valores armazenados dos endereços acedidos.",
             "Só as operações de leitura preservam os valores armazenados nos endereços acedidos."
         ],
-        answer: "As operações de leitura e de escrita preservam os valores armazenados nos endereços acedidos."
+        answer: "Só as operações de leitura preservam os valores armazenados nos endereços acedidos."
     },
     {
         question: "Os sistemas interativos multi-utilizador com partilha de tempo apresentam várias vantagens em relação aos anteriores sistemas não-interativos. Qual das seguintes afirmações não é verdadeira?",
@@ -1829,7 +1829,7 @@ const questions = [
             "Só as operações de escrita modificam os valores armazenados nos endereços acedidos.",
             "As operações de leitura e de escrita modificam os valores armazenados nos endereços acedidos."
         ],
-        answer: "As operações de leitura e de escrita preservam os valores armazenados nos endereços acedidos."
+        answer: "Só as operações de escrita modificam os valores armazenados nos endereços acedidos."
     },
     {
         question: "Um dos principais objetivos de um sistema operativo é...",
@@ -1999,7 +1999,7 @@ const questions = [
             "Waiting.",
             "Nenhuma das anteriores."
         ],
-        answer: "Waiting."
+        answer: "Ready."
     },
     {
         question: "Um processo é um fluxo de atividade:",
@@ -2569,7 +2569,7 @@ const questions = [
             "Waiting.",
             "Nenhuma das anteriores."
         ],
-        answer: "Waiting."
+        answer: "Nenhuma das anteriores."
     },
     {
         question: "Relativamente ao método de escalonamento Multinível por Filas, de prioridades fixas, podemos afirmar que:",
