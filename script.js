@@ -2,6 +2,7 @@
 
 let availableQuestions = [];
 let selectedQuestions = [];
+let totalQuestions = 0;
 let currentQuestionIndex = 0;
 let score = 0;
 const TOTAL_QUESTIONS = 20;
@@ -28,6 +29,7 @@ function startQuiz() {
     // Seleciona 20 perguntas aleatórias
     availableQuestions = [...questions];
     selectedQuestions = getRandomQuestions(availableQuestions, TOTAL_QUESTIONS);
+    totalQuestions = selectedQuestions.length;
 
     loadQuestion();
 }
@@ -49,7 +51,7 @@ function loadQuestion() {
     }
 
     const currentQuestion = selectedQuestions[currentQuestionIndex];
-    questionEl.innerHTML = `Questão ${currentQuestionIndex + 1} de ${TOTAL_QUESTIONS}: ${currentQuestion.question}`;
+    questionEl.innerHTML = `Questão ${currentQuestionIndex + 1} de ${totalQuestions}: ${currentQuestion.question}`;
     optionsEl.innerHTML = '';
 
     // Embaralhar a ordem das opções
