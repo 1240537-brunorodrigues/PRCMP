@@ -34,8 +34,12 @@ function startQuiz() {
 
 // Função para selecionar um número específico de perguntas aleatórias
 function getRandomQuestions(questionArray, num) {
-    const shuffled = questionArray.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, Math.min(num, questionArray.length));
+    const arr = [...questionArray];
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr.slice(0, Math.min(num, arr.length));
 }
 
 // Função para carregar a pergunta atual
